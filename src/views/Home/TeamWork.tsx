@@ -286,8 +286,8 @@ export default function TeamWork() {
         </div>
 
         {/* Button */}
-        <div className="text-center mt-12">
-          <button className="bg-orange-500 text-white px-8 py-4 text-lg font-medium rounded-md hover:bg-orange-600 transition">
+        <div className="text-center sm:mt-12 mt-6">
+          <button className="bg-orange-500 text-white sm:px-8 sm:py-4 px-6 py-2 sm:text-lg text-md font-medium rounded-md hover:bg-orange-600 transition">
          {`   Explore Our Full-Service Offering`}
           </button>
         </div>
