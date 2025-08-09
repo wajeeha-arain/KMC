@@ -24,3 +24,14 @@ body {
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+body{
+  background-color: #ffffff;
+  color: #0a0a0a;
+}
+ .maincontainer{
+  @apply max-w-[1440px] mx-auto
+  md:px-14 px-7;
+    color: #0a0a0a;
+    /* font-family: Be Vietnam Pro; */
+ }
