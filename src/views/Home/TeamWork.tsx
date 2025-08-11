@@ -166,7 +166,7 @@ import { MdPlayArrow } from "react-icons/md";
 export default function TeamWork() {
   const services = [
     {
-      img: "/image/Rectangle 59.png",
+      img: "/image/kmc.png",
       alt: "Talent That Fits",
       title: "Talent That Fits",
       points: [
@@ -175,16 +175,16 @@ export default function TeamWork() {
       ],
     },
     {
-      img: "/image/Rectangle 68.png",
+      img: "/image/lmc1.png",
       alt: "Payroll and HR",
       title: "Payroll And HR",
       points: [
-        { text: "End-to-end employee management", color: "black" },
-        { text: "Philippine HR compliance, holidays, and benefits", color: "orange" },
+        { text: "End-to-end employee management", color: "orange" },
+        { text: "Philippine HR compliance, holidays, and benefits", color: "black" },
       ],
     },
     {
-      img: "/image/Rectangle 74.png",
+      img: "/image/lmc3.png",
       alt: "Legal and Compliance",
       title: "Legal And Compliance",
       points: [
@@ -196,7 +196,7 @@ export default function TeamWork() {
 
   const services2 = [
     {
-      img: "/image/Rectangle 75.png",
+      img: "/image/lmc4.png",
       alt: "Workspaces That Work",
       title: "Workspaces That Work",
       points: [
@@ -206,7 +206,7 @@ export default function TeamWork() {
       ],
     },
     {
-      img: "/image/Rectangle 81.png",
+      img: "/image/lmc5.png",
       alt: "CASA by KMC",
       title: "CASA By KMC (Optional Housing)",
       points: [
@@ -224,11 +224,11 @@ export default function TeamWork() {
       <div className="sm:my-10 my-4 mx-auto">
         {/* Heading */}
         <div className="text-center max-w-5xl mx-auto sm:mb-12 mb-6">
-          <h2 className="text-xl sm:text-3xl md:text-5xl font-semibold">
+          <h2 className="text-2xl sm:text-3xl lg:text-5xl md:text-4xl font-semibold">
             <span className="text-[#051636]">{`Everything You Need.`}</span>{" "}
             <span className="text-orange-500">{`Nothing You Don’t.`}</span>
           </h2>
-          <p className="text-[#757575] md:text-[18px] text-balance text-[16px] mt-4">
+          <p className="max-w-4xl mx-auto text-[#757575] md:text-[18px]  text-[16px] mt-4">
             {`With KMC, you’re not juggling vendors. We handle every part of the offshore employment experience under one roof—so you get more control, less risk, and better results.`}
           </p>
         </div>
@@ -242,12 +242,12 @@ export default function TeamWork() {
                 alt={service.alt}
                 width={700}
                 height={400}
-                className="rounded-lg w-full h-auto"
+                className="rounded-3xl w-full h-auto"
               />
-              <h3 className="sm:text-[22px] text:[20px] font-semibold text-orange-500 sm:mt-4 border-b border-gray-300 pb-2">
+              <h3 className="sm:text-[22px] text-[20px]  font-semibold text-orange-500 sm:mt-4 mt-2 border-b border-gray-300 pb-2">
                 {service.title}
               </h3>
-              <ul className="sm:text-[18px] text-[16px] mt-3 space-y-2 text-[#051636]">
+              <ul className=" md:text-[18px]  text-[16px] mt-3 space-y-2 text-[#051636]">
                 {service.points.map((point, i) => (
                   <li key={i} className="flex items-start gap-2">
                     <MdPlayArrow className={`${getColorClass(point.color)} text-lg mt-0.5`} />
@@ -268,12 +268,12 @@ export default function TeamWork() {
                 alt={service.alt}
                 width={800}
                 height={400}
-                className="rounded-lg w-full h-auto"
+                className="rounded-3xl w-full h-auto"
               />
-              <h3 className="sm:text-[22px] text:[20px] font-semibold text-orange-500 ms:mt-4 border-b border-gray-300 pb-2">
+              <h3 className="sm:text-[22px] text:[20px] font-semibold text-orange-500 ms:mt-4 mt-2 border-b border-gray-300 pb-2">
                 {service.title}
               </h3>
-              <ul className="sm:text-[18px] text-[16px] mt-3 space-y-2 text-[#051636]">
+              <ul className=" md:text-[18px]  text-[16px] mt-3 space-y-2 text-[#051636]">
                 {service.points.map((point, i) => (
                   <li key={i} className="flex items-start gap-2">
                     <MdPlayArrow className={`${getColorClass(point.color)} text-lg mt-0.5`} />
@@ -287,7 +287,7 @@ export default function TeamWork() {
 
         {/* Button */}
         <div className="text-center sm:mt-12 mt-6">
-          <button className="bg-orange-500 text-white sm:px-8 sm:py-4 px-6 py-2 sm:text-lg text-md font-medium rounded-md hover:bg-orange-600 transition">
+          <button className="bg-orange-500 text-white sm:px-8 sm:py-4 px-6 py-3 sm:text-lg text-md font-medium rounded-md hover:bg-orange-600 transition">
          {`   Explore Our Full-Service Offering`}
           </button>
         </div>
