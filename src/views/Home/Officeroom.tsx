@@ -1,0 +1,57 @@
+"use client";
+
+import Image from "next/image";
+
+export default function Officeroom() {
+  const images = [
+    "/image/Rectangle 84.png",
+    "/image/Rectangle 85.png",
+    "/image/Rectangle 86.png",
+    "/image/Rectangle 87(1).png",
+  ];
+
+  return (
+    <section className="maincontainer bg-white py-16">
+      {/* Heading */}
+      <div className="text-center mb-8">
+        <h2 className="text-3xl md:text-5xl font-semibold leading-snug">
+          <span className="text-[#051636]">Where </span>
+          <span className="text-[#EE7A30]">Great Teams</span>
+          <br />
+          <span className="text-[#051636]">Show Up To </span>
+          <span className="text-[#EE7A30]">Work</span>
+        </h2>
+        <p className="text-[#757575] max-w-3xl mx-auto mt-4 text-base md:text-lg">
+          High-performing people deserve better than bare-bones setups. Our
+          premium Philippine offices give your team what they need to thrive—
+          modern, secure, and purpose-built for productivity.
+        </p>
+      </div>
+
+      {/* Images Grid */}
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 mb-10">
+        {images.map((src, index) => (
+          <div
+            key={index}
+            className="relative w-full h-64 md:h-80 lg:h-[450px] rounded-[30px] overflow-hidden shadow-md"
+          >
+            <Image
+              src={src}
+              alt={`office-${index}`}
+              fill
+              className="object-cover"
+              priority
+            />
+          </div>
+        ))}
+      </div>
+
+      {/* Button */}
+      <div className="text-center">
+        <button className="bg-[#EE7A30] hover:bg-orange-600 text-white px-8 py-3 rounded-lg font-semibold text-sm md:text-base transition">
+          Take A Virtual Office Tour
+        </button>
+      </div>
+    </section>
+  );
+}
