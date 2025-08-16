@@ -1,6 +1,7 @@
 "use client";
 
 import Image from "next/image";
+import Button from "@/Component/Button/Button";
 
 export default function Officeroom() {
   const images = [
@@ -22,9 +23,9 @@ export default function Officeroom() {
           <span className="text-[#EE7A30]">Work</span>
         </h2>
         <p className="text-[#757575] max-w-3xl mx-auto mt-4 text-base md:text-lg">
-          High-performing people deserve better than bare-bones setups. Our
+{`          High-performing people deserve better than bare-bones setups. Our
           premium Philippine offices give your team what they need to thrive—
-          modern, secure, and purpose-built for productivity.
+          modern, secure, and purpose-built for productivity.`}
         </p>
       </div>
 
@@ -48,9 +49,9 @@ export default function Officeroom() {
 
       {/* Button */}
       <div className="text-center">
-        <button className="bg-[#EE7A30] hover:bg-orange-600 text-white px-8 py-3 rounded-lg font-semibold text-sm md:text-base transition">
+        <Button onClick={() => alert("Offer Claimed!")}>
           Take A Virtual Office Tour
-        </button>
+        </Button>
       </div>
     </section>
   );
