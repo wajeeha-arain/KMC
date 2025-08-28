@@ -3,9 +3,9 @@
 import Image from "next/image";
 import { MdPlayArrow } from "react-icons/md";
 import Button from "@/Component/Button/Button";
-import { services, services2 } from "@/Component/Date/Services"; 
+import { services, services2 } from "@/Component/Date/Services";
 
-//color 
+// color
 const getColorClass = (color: string) => {
   switch (color) {
     case "black":
@@ -13,11 +13,14 @@ const getColorClass = (color: string) => {
     case "orange":
       return "text-orange-500";
     default:
-      return "text-black"; 
+      return "text-black";
   }
 };
 
 export default function TeamWork() {
+  // merge arrays
+  const allServices = [...services, ...services2];
+
   return (
     <div className="maincontainer">
       <div className="sm:my-10 my-4 mx-auto">
@@ -28,31 +31,34 @@ export default function TeamWork() {
             <span className="text-orange-500">{`Nothing You Don’t`}.</span>
           </h2>
           <p className="max-w-4xl mx-auto text-[#757575] md:text-[18px] text-[16px] mt-4">
-{`            With KMC, you’re not juggling vendors. We handle every part of the
+            {`With KMC, you’re not juggling vendors. We handle every part of the
             offshore employment experience under one roof—so you get more
             control, less risk, and better results.`}
           </p>
         </div>
 
-        {/* Services 1 */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-          {services.map((service, index) => (
-            <div key={index}>
+        {/* 👇 Services */}
+        {/* Small & Medium (normal grid) */}
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 lg:hidden">
+          {allServices.map((srv, i) => (
+            <div key={i}>
               <Image
-                src={service.img}
-                alt={service.alt}
-                width={700}
+                src={srv.img}
+                alt={srv.alt}
+                width={800}
                 height={400}
-                className="rounded-3xl w-full h-auto"
+                className="rounded-3xl w-full h-[200px] sm:h-[250px] md:h-[280px] object-cover"
               />
               <h3 className="sm:text-[22px] text-[18px] font-semibold text-orange-500 sm:mt-4 mt-2 border-b border-gray-300 pb-2">
-                {service.title}
+                {srv.title}
               </h3>
               <ul className="md:text-[18px] text-[16px] mt-3 space-y-2 text-[#051636]">
-                {service.points.map((point, i) => (
-                  <li key={i} className="flex items-start gap-2">
+                {srv.points.map((point, j) => (
+                  <li key={j} className="flex items-start gap-2">
                     <MdPlayArrow
-                      className={`${getColorClass(point.color)} text-lg mt-0.5`}
+                      className={`${getColorClass(
+                        point.color
+                      )} text-lg mt-0.5`}
                     />
                     {point.text}
                   </li>
@@ -62,25 +68,27 @@ export default function TeamWork() {
           ))}
         </div>
 
-        {/* Services 2 */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-8">
-          {services2.map((service, index) => (
-            <div key={index}>
+        {/* Large Screens (first 3 + wrapped last 2) */}
+        <div className="hidden lg:grid grid-cols-3 gap-6">
+          {allServices.slice(0, 3).map((srv, i) => (
+            <div key={i}>
               <Image
-                src={service.img}
-                alt={service.alt}
+                src={srv.img}
+                alt={srv.alt}
                 width={800}
                 height={400}
-                className="rounded-3xl w-full h-auto"
+                className="rounded-3xl w-full h-[200px] sm:h-[250px] md:h-[280px] lg:h-auto object-cover"
               />
-              <h3 className="sm:text-[22px] text-[21px] font-semibold text-orange-500 sm:mt-4 mt-2 border-b border-gray-300 pb-2">
-                {service.title}
+              <h3 className="sm:text-[22px] text-[18px] font-semibold text-orange-500 sm:mt-4 mt-2 border-b border-gray-300 pb-2">
+                {srv.title}
               </h3>
               <ul className="md:text-[18px] text-[16px] mt-3 space-y-2 text-[#051636]">
-                {service.points.map((point, i) => (
-                  <li key={i} className="flex items-start gap-2">
+                {srv.points.map((point, j) => (
+                  <li key={j} className="flex items-start gap-2">
                     <MdPlayArrow
-                      className={`${getColorClass(point.color)} text-lg mt-0.5`}
+                      className={`${getColorClass(
+                        point.color
+                      )} text-lg mt-0.5`}
                     />
                     {point.text}
                   </li>
@@ -88,13 +96,41 @@ export default function TeamWork() {
               </ul>
             </div>
           ))}
+
+          {/* last 2 wrap */}
+          <div className="col-span-3 grid grid-cols-2 gap-6">
+            {allServices.slice(3).map((srv, i) => (
+              <div key={i}>
+                <Image
+                  src={srv.img}
+                  alt={srv.alt}
+                  width={1200}
+                  height={400}
+                  className="rounded-3xl w-full h-[200px] sm:h-[250px] md:h-[280px] lg:h-[280px] object-cover"
+                />
+                <h3 className="sm:text-[22px] text-[18px] font-semibold text-orange-500 sm:mt-4 mt-2 border-b border-gray-300 pb-2">
+                  {srv.title}
+                </h3>
+                <ul className="md:text-[18px] text-[16px] mt-3 space-y-2 text-[#051636]">
+                  {srv.points.map((point, j) => (
+                    <li key={j} className="flex items-start gap-2">
+                      <MdPlayArrow
+                        className={`${getColorClass(
+                          point.color
+                        )} text-lg mt-0.5`}
+                      />
+                      {point.text}
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            ))}
+          </div>
         </div>
 
         {/* Button */}
         <div className="text-center mt-10">
-          <Button>
-            {`Explore Our Full-Service Offering`}
-          </Button>
+          <Button>{`Explore Our Full-Service Offering`}</Button>
         </div>
       </div>
     </div>
