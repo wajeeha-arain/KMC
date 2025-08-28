@@ -92,7 +92,7 @@ export default function TeamWork() {
 
         {/* Button */}
         <div className="text-center mt-10">
-          <Button onClick={() => alert("Offer Claimed!")}>
+          <Button>
             {`Explore Our Full-Service Offering`}
           </Button>
         </div>

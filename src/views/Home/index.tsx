@@ -12,7 +12,7 @@ import Officeroom from "./Officeroom";
 
 const Home = ({ }) => {
   return (
-<Layout>
+<Layout>   
      
      <TeamWork />
      <StartingFive />

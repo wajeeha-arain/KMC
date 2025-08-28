@@ -49,7 +49,7 @@ export default function Officeroom() {
 
       {/* Button */}
       <div className="text-center">
-        <Button onClick={() => alert("Offer Claimed!")}>
+        <Button>
           Take A Virtual Office Tour
         </Button>
       </div>

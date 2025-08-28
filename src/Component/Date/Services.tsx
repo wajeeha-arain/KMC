@@ -1,6 +1,6 @@
 export interface ServicePoint {
   text: string;
-  color: "black" | "orange"; 
+  color: "black" | "orange";
 }
 
 export interface Service {
@@ -61,3 +61,48 @@ export const services2: Service[] = [
     ],
   },
 ];
+
+
+
+import { FileText, Handshake, GraduationCap, Building2 } from "lucide-react";
+
+export interface Feature {
+  title: string;
+  icon: React.ElementType; // Lucide icons ka type
+}
+
+export interface StartingFiveData {
+  heading: string;
+  subHeading: string;
+  description: string;
+  offer: string;
+  features: Feature[];
+  buttonText: string;
+  image: string;
+}
+
+export const startingFiveData: StartingFiveData = {
+  heading: "The Starting Five:",
+  subHeading: "Launch Your Team With No Setup Fees",
+  description:
+    "Ready to scale without the stress? Our Starting Five gives you a fully managed offshore team of five—recruited, onboarded, and supported by KMC.",
+  offer:
+    "FOR A LIMITED TIME, WE’RE WAIVING ALL SETUP FEES ON YOUR FIRST FIVE HIRES.",
+  buttonText: "Claim Your Starting Five Offer",
+  image: "/image/startingfive.png",
+  features: [
+    { title: "5 Custom Hires, Recruited Just For You", icon: FileText },
+    {
+      title: "Day-To-Day Support From A Fractional KMC Team Manager",
+      icon: Handshake,
+    },
+    {
+      title: "Cultural Training And Onboarding Done Right",
+      icon: GraduationCap,
+    },
+    {
+      title: "All-Inclusive Setup: Office, HR, IT, Payroll, And Admin",
+      icon: Building2,
+    },
+  ],
+};
