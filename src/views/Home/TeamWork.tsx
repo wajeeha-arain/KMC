@@ -18,27 +18,25 @@ const getColorClass = (color: string) => {
 };
 
 export default function TeamWork() {
-  // merge arrays
   const allServices = [...services, ...services2];
 
   return (
     <div className="maincontainer">
-      <div className="sm:my-10 my-4 mx-auto">
+      <div className="sm:my-10 my-4 mx-auto ">
         {/* Heading */}
         <div className="text-center max-w-5xl mx-auto sm:mb-12 mb-6">
-          <h2 className="text-2xl sm:text-3xl lg:text-5xl md:text-4xl font-semibold">
+          <h2 className="text-2xl sm:text-3xl lg:text-5xl md:text-4xl font-semibold font-beVietnam">
             <span className="text-[#051636]">{`Everything You Need.`}</span>{" "}
             <span className="text-orange-500">{`Nothing You Don’t`}.</span>
           </h2>
-          <p className="max-w-4xl mx-auto text-[#757575] md:text-[18px] text-[16px] mt-4">
+          <p className="max-w-4xl mx-auto text-[#757575] md:text-[18px] text-[16px] mt-4 font-beVietnam">
             {`With KMC, you’re not juggling vendors. We handle every part of the
             offshore employment experience under one roof—so you get more
             control, less risk, and better results.`}
           </p>
         </div>
 
-        {/* 👇 Services */}
-        {/* Small & Medium (normal grid) */}
+      
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 lg:hidden">
           {allServices.map((srv, i) => (
             <div key={i}>
@@ -49,7 +47,7 @@ export default function TeamWork() {
                 height={400}
                 className="rounded-3xl w-full h-[200px] sm:h-[250px] md:h-[280px] object-cover"
               />
-              <h3 className="sm:text-[22px] text-[18px] font-semibold text-orange-500 sm:mt-4 mt-2 border-b border-gray-300 pb-2">
+              <h3 className="sm:text-[24px] text-[20px] font-semibold text-orange-500 sm:mt-4 mt-2 border-b border-gray-300 pb-2">
                 {srv.title}
               </h3>
               <ul className="md:text-[18px] text-[16px] mt-3 space-y-2 text-[#051636]">
@@ -68,7 +66,6 @@ export default function TeamWork() {
           ))}
         </div>
 
-        {/* Large Screens (first 3 + wrapped last 2) */}
         <div className="hidden lg:grid grid-cols-3 gap-6">
           {allServices.slice(0, 3).map((srv, i) => (
             <div key={i}>
@@ -97,7 +94,7 @@ export default function TeamWork() {
             </div>
           ))}
 
-          {/* last 2 wrap */}
+          {/* last  */}
           <div className="col-span-3 grid grid-cols-2 gap-6">
             {allServices.slice(3).map((srv, i) => (
               <div key={i}>

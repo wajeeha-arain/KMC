@@ -2,17 +2,13 @@
 
 import Image from "next/image";
 import Button from "@/Component/Button/Button";
+import {images} from "@/Component/Date/Services"
 
 export default function Officeroom() {
-  const images = [
-    "/image/Rectangle 84.png",
-    "/image/Rectangle 85.png",
-    "/image/Rectangle 86.png",
-    "/image/Rectangle 87(1).png",
-  ];
+
 
   return (
-    <section className="maincontainer bg-white py-16">
+    <section className="maincontainer bg-white py-16 font-beVietnam">
       {/* Heading */}
       <div className="text-center mb-8">
         <h2 className="text-3xl md:text-5xl font-semibold leading-snug">

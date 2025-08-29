@@ -23,7 +23,7 @@ export default function Button({
       onClick={onClick}
       disabled={disabled}
       {...rest}
-      className={`inline-block px-6 py-4 rounded-lg font-semibold shadow transition
+      className={`inline-block px-6 py-4 rounded-xl font-semibold shadow transition
         ${disabled
           ? "bg-gray-400 cursor-not-allowed text-white"
           : "bg-[#EE7A30] hover:bg-orange-600 text-white"} 

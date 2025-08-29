@@ -106,3 +106,12 @@ export const startingFiveData: StartingFiveData = {
     },
   ],
 };
+
+
+
+  export const images = [
+    "/image/Rectangle 84.png",
+    "/image/Rectangle 85.png",
+    "/image/Rectangle 86.png",
+    "/image/Rectangle 87(1).png",
+  ];
