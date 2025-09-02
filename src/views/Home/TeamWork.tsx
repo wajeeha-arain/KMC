@@ -27,7 +27,7 @@ export default function TeamWork() {
         <div className="text-center max-w-5xl mx-auto sm:mb-12 mb-6">
           <h2 className="text-2xl sm:text-3xl lg:text-5xl md:text-4xl font-semibold font-beVietnam">
             <span className="text-[#051636]">{`Everything You Need.`}</span>{" "}
-            <span className="text-orange-500">{`Nothing You Don’t`}.</span>
+            <span className="text-[#EE7A30]">{`Nothing You Don’t`}.</span>
           </h2>
           <p className="max-w-4xl mx-auto text-[#757575] md:text-[18px] text-[16px] mt-4 font-beVietnam">
             {`With KMC, you’re not juggling vendors. We handle every part of the
@@ -47,7 +47,7 @@ export default function TeamWork() {
                 height={400}
                 className="rounded-3xl w-full h-[200px] sm:h-[250px] md:h-[280px] object-cover"
               />
-              <h3 className="sm:text-[24px] text-[20px] font-semibold text-orange-500 sm:mt-4 mt-2 border-b border-gray-300 pb-2">
+              <h3 className="sm:text-[24px] text-[20px] font-semibold text-[#EE7A30] sm:mt-4 mt-2 border-b border-gray-300 pb-2">
                 {srv.title}
               </h3>
               <ul className="md:text-[18px] text-[16px] mt-3 space-y-2 text-[#051636]">
@@ -76,7 +76,7 @@ export default function TeamWork() {
                 height={400}
                 className="rounded-3xl w-full h-[200px] sm:h-[250px] md:h-[280px] lg:h-auto object-cover"
               />
-              <h3 className="sm:text-[22px] text-[18px] font-semibold text-orange-500 sm:mt-4 mt-2 border-b border-gray-300 pb-2">
+              <h3 className="sm:text-[22px] text-[18px] font-semibold text-[#EE7A30] sm:mt-4 mt-2 border-b border-gray-300 pb-2">
                 {srv.title}
               </h3>
               <ul className="md:text-[18px] text-[16px] mt-3 space-y-2 text-[#051636]">
@@ -105,7 +105,7 @@ export default function TeamWork() {
                   height={400}
                   className="rounded-3xl w-full h-[200px] sm:h-[250px] md:h-[280px] lg:h-[280px] object-cover"
                 />
-                <h3 className="sm:text-[22px] text-[18px] font-semibold text-orange-500 sm:mt-4 mt-2 border-b border-gray-300 pb-2">
+                <h3 className="sm:text-[22px] text-[18px] font-semibold text-[#EE7A30] sm:mt-4 mt-2 border-b border-gray-300 pb-2">
                   {srv.title}
                 </h3>
                 <ul className="md:text-[18px] text-[16px] mt-3 space-y-2 text-[#051636]">
