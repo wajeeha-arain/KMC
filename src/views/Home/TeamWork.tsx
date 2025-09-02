@@ -47,7 +47,7 @@ export default function TeamWork() {
                 height={400}
                 className="rounded-3xl w-full h-[200px] sm:h-[250px] md:h-[280px] object-cover"
               />
-              <h3 className="sm:text-[24px] text-[20px] font-semibold text-[#EE7A30] sm:mt-4 mt-2 border-b border-gray-300 pb-2">
+              <h3 className="sm:text-[24px] text-[20px] font-semibold text-[#EE7A30] sm:mt-4 mt-2 border-b border-[#d1d5dc] pb-2">
                 {srv.title}
               </h3>
               <ul className="md:text-[18px] text-[16px] mt-3 space-y-2 text-[#051636]">
@@ -76,7 +76,7 @@ export default function TeamWork() {
                 height={400}
                 className="rounded-3xl w-full h-[200px] sm:h-[250px] md:h-[280px] lg:h-auto object-cover"
               />
-              <h3 className="sm:text-[22px] text-[18px] font-semibold text-[#EE7A30] sm:mt-4 mt-2 border-b border-gray-300 pb-2">
+              <h3 className="sm:text-[22px] text-[18px] font-semibold text-[#EE7A30] sm:mt-4 mt-2 border-b border-[#b7b8ba] pb-2">
                 {srv.title}
               </h3>
               <ul className="md:text-[18px] text-[16px] mt-3 space-y-2 text-[#051636]">
@@ -105,7 +105,7 @@ export default function TeamWork() {
                   height={400}
                   className="rounded-3xl w-full h-[200px] sm:h-[250px] md:h-[280px] lg:h-[280px] object-cover"
                 />
-                <h3 className="sm:text-[22px] text-[18px] font-semibold text-[#EE7A30] sm:mt-4 mt-2 border-b border-gray-300 pb-2">
+                <h3 className="sm:text-[22px] text-[18px] font-semibold text-[#EE7A30] sm:mt-4 mt-2 border-b border-[#b7b8ba] pb-2">
                   {srv.title}
                 </h3>
                 <ul className="md:text-[18px] text-[16px] mt-3 space-y-2 text-[#051636]">
