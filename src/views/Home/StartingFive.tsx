@@ -56,7 +56,7 @@ export default function StartingFive() {
                             key={i}
                             className="flex items-center gap-4 border-2 border-orange-300 bg-white rounded-2xl sm:px-5 sm:py-4 px-3 py-2 shadow-sm"
                         >
-                            <div className="flex-none w-12 h-12 flex items-center justify-center text-orange-500">
+                            <div className="flex-none w-12 h-12 flex items-center justify-center text-[#EE7A30]">
                                 <f.icon size={28} strokeWidth={2.2} />
                             </div>
                             <div className="sm:text-[20px] text-[16px] text-[#051636] font-bold leading-snug">
