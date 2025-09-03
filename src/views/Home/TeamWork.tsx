@@ -5,6 +5,16 @@ import { MdPlayArrow } from "react-icons/md";
 import Button from "@/Component/Button/Button";
 import { services, services2 } from "@/Component/Date/Services";
 
+//fontapply
+// import { Be_Vietnam_Pro } from "next/font/google";
+
+// // Be Vietnam Pro font import
+// const beVietnamPro = Be_Vietnam_Pro({
+//   subsets: ["latin"],
+//   weight: ["400", "500", "600", "700"], // jitne weights chahiye use karo
+// });
+
+
 // color
 const getColorClass = (color: string) => {
   switch (color) {
@@ -20,9 +30,9 @@ const getColorClass = (color: string) => {
 
 export default function TeamWork() {
   const allServices = [...services, ...services2];
-
+// ${beVietnamPro.className} font in main div
   return (
-    <div className="maincontainer">
+    <div className={`maincontainer `}>
       <div className="sm:my-14 my-6 mx-auto">
         {/* Heading */}
         <div className="text-center max-w-5xl mx-auto sm:mb-12 mb-6">

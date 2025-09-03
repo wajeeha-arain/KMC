@@ -4,9 +4,11 @@ import Image from "next/image";
 import Button from "@/Component/Button/Button";
 import { images } from "@/Component/Date/Services";
 
+
 export default function Officeroom() {
+ 
   return (
-    <section className="maincontainer bg-white py-12 sm:py-16 font-beVietnam">
+    <section className={`maincontainer bg-white py-12 sm:py-16 `}>
       {/* Heading */}
       <div className="text-center mb-10 sm:mb-12">
         <h2 className="text-3xl sm:text-4xl md:text-[40px] lg:text-[45px] font-semibold leading-snug">
