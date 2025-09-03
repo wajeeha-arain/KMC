@@ -40,8 +40,9 @@ export default function StartingFive() {
                     </p>
 
                     {/* Button */}
-                    <div className="mt-5 md:mt-6 lg:mb-0">
-                        <Button>{startingFiveData.buttonText}</Button>
+
+                    <div className="sm:text-left text-center sm:mt-10 mt-6">
+                        <Button>{`Claim Your Starting Five Offer`}</Button>
                     </div>
                 </div>
 
