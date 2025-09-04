@@ -13,12 +13,12 @@ export default function PartnerSection() {
         rounded-[20px] sm:rounded-[25px] lg:rounded-[30px] 
         border border-[#FF720080] bg-[#fff2ee] 
         px-4 sm:px-6 md:px-10 lg:px-16 
-        py-8 sm:py-12 lg:py-16 
+        py-8 sm:py-12 lg:py-14 
         overflow-hidden" 
       >
         {/* Left */}
         <div
-          className="absolute left-0 lg:left-[-20px] top-[60px]  lg:top-[135px] 
+          className="absolute left-0 lg:left-[-20px] top-[60px]  lg:top-[120px] 
           w-[100px] sm:w-[180px] md:w-[250px] lg:w-[380px] z-0 hidden lg:block"
         >
           <Image
