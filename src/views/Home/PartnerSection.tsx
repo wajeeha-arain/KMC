@@ -18,8 +18,8 @@ export default function PartnerSection() {
       >
         {/* Left */}
         <div
-          className="absolute left-0 lg:left-[-20px] top-[60px]  lg:top-[155px] 
-          w-[100px] sm:w-[180px] md:w-[250px] lg:w-[350px] z-0 hidden lg:block"
+          className="absolute left-0 lg:left-[-20px] top-[60px]  lg:top-[135px] 
+          w-[100px] sm:w-[180px] md:w-[250px] lg:w-[380px] z-0 hidden lg:block"
         >
           <Image
             src="/image/Union(3).png"
@@ -34,7 +34,7 @@ export default function PartnerSection() {
         {/* Right */}
         <div
           className="absolute right-0 lg:right-[-20px] top-[10px] sm:top-[30px] lg:top-[0px] 
-          w-[100px] sm:w-[180px] md:w-[220px] lg:w-[300px] z-0 hidden lg:block"
+          w-[100px] sm:w-[180px] md:w-[220px] lg:w-[330px] z-0 hidden lg:block"
         >
           <Image
             src="/image/Union(4).png"
