@@ -14,7 +14,7 @@ export default function StartingFive() {
             <div className="maincontainer mx-auto px-4 sm:px-6 lg:px-12 pt-14 lg:pt-20 pb-10 sm:pb-16 lg:pb-0 grid lg:grid-cols-12 gap-10 items-start">
                 {/* Left */}
                 <div className="lg:col-span-6">
-                    <h1 className="text-3xl sm:text-4xl lg:text-5xl font-semibold text-slate-900 leading-[38px] sm:leading-[48px] lg:leading-[58px]">
+                    <h1 className="text-3xl sm:text-4xl md:text-[40px] lg:text-[45px]  font-semibold text-slate-900 leading-[38px] sm:leading-[48px] lg:leading-[58px]">
                         {startingFiveData.heading}
                         <span className="block">
                             Launch Your Team{" "}
@@ -24,8 +24,8 @@ export default function StartingFive() {
                             No Setup Fees
                         </span>
                     </h1>
-
-                    <p className="text-[15px] sm:text-[16px] lg:text-[18px] mt-3 text-[#757575] max-w-2xl font-normal">
+ 
+                    <p className="text-[15px] sm:text-[16px] lg:text-[18px] mt-3 text-[#757575] max-w-2xl font-normal font-beVietnam">
                         {`A limited-time offer for growing Aussie businesses.`}
                     </p>
 
@@ -49,7 +49,7 @@ export default function StartingFive() {
                     </div>
                 </div>
 
-                {/* Right Features */}
+                {/* Right*/}
                 <div className="lg:col-span-6 space-y-4">
                     {startingFiveData.features.map((f, i) => (
                         <div

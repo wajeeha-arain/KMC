@@ -4,11 +4,9 @@ import Image from "next/image";
 import Button from "@/Component/Button/Button";
 import { images } from "@/Component/Date/Services";
 
-
 export default function Officeroom() {
- 
   return (
-    <section className={`maincontainer bg-white py-12 sm:py-16 `}>
+    <section className="maincontainer bg-white py-6 sm:py-10">
       {/* Heading */}
       <div className="text-center mb-10 sm:mb-12">
         <h2 className="text-3xl sm:text-4xl md:text-[40px] lg:text-[45px] font-semibold leading-snug">
@@ -28,7 +26,7 @@ export default function Officeroom() {
         {images.map((src, index) => (
           <div
             key={index}
-            className="relative w-full h-[220px] sm:h-[280px] md:h-[350px] lg:h-[450px] rounded-[30px] overflow-hidden shadow-md"
+            className="relative w-full aspect-[4/5] sm:aspect-[3/4] lg:aspect-[4/5] rounded-[30px] overflow-hidden shadow-md"
           >
             <Image
               src={src}
@@ -43,7 +41,7 @@ export default function Officeroom() {
 
       {/* Button */}
       <div className="text-center">
-        <Button>Take A Virtual Office Tour</Button>
+        <Button>{`Take A Virtual Office Tour`}</Button>
       </div>
     </section>
   );

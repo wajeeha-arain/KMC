@@ -3,6 +3,7 @@ import TeamWork from "./TeamWork";
 import StartingFive from "./StartingFive";
 import Officeroom from "./Officeroom";
 import ClientSection from "./ClientSection";
+import PartnerSection from "./PartnerSection";
 
 
 
@@ -19,6 +20,7 @@ const Home = ({ }) => {
      <StartingFive />
      <Officeroom />
      <ClientSection />
+     <PartnerSection />
 
 </Layout>
 
