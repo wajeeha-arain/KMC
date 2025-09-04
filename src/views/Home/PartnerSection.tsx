@@ -49,7 +49,7 @@ export default function PartnerSection() {
         {/* Heading */}
         <h2
           className="text-[#051636] font-semibold 
-          text-lg sm:text-2xl md:text-3xl lg:text-[45px] 
+           text-3xl sm:text-4xl md:text-[40px] lg:text-[45px] 
           leading-snug md:leading-[38px] lg:leading-[50px] capitalize relative z-10"
         >
           {`One Partner.`}
