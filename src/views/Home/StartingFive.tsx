@@ -10,7 +10,7 @@ export default function StartingFive() {
 
     
     return (
-        <section className={`relative bg-[#eef6fb] mx-auto font-beVietnam `}>
+        <section className={`relative bg-[#E9F1FF] mx-auto font-beVietnam `}>
             <div className="maincontainer mx-auto px-4 sm:px-6 lg:px-12 pt-14 lg:pt-20 pb-10 sm:pb-16 lg:pb-0 grid lg:grid-cols-12 gap-10 items-start">
                 {/* Left */}
                 <div className="lg:col-span-6">
