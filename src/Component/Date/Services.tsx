@@ -1,3 +1,10 @@
+
+
+
+
+
+
+
 export interface ServicePoint {
   text: string;
   color: "black" | "orange";
@@ -64,23 +71,22 @@ export const services2: Service[] = [
 
 
 
-import { FileText, Handshake, GraduationCap, Building2 } from "lucide-react";
-
-export interface Feature {
+type Feature = {
   title: string;
-  icon: React.ElementType; // Lucide icons ka type
-}
+  image: string; // ✅ ab icon ke bajaye image use karo
+};
 
-export interface StartingFiveData {
+type StartingFiveData = {
   heading: string;
   subHeading: string;
   description: string;
   offer: string;
-  features: Feature[];
   buttonText: string;
   image: string;
-}
+  features: Feature[];
+};
 
+// data file (services.ts ya jis me aapka data hai)
 export const startingFiveData: StartingFiveData = {
   heading: "The Starting Five:",
   subHeading: "Launch Your Team With No Setup Fees",
@@ -91,22 +97,21 @@ export const startingFiveData: StartingFiveData = {
   buttonText: "Claim Your Starting Five Offer",
   image: "/image/startingfive.png",
   features: [
-    { title: "5 Custom Hires, Recruited Just For You", icon: FileText },
-    {
-      title: "Day-To-Day Support From A Fractional KMC Team Manager",
-      icon: Handshake,
-    },
-    {
-      title: "Cultural Training And Onboarding Done Right",
-      icon: GraduationCap,
-    },
-    {
-      title: "All-Inclusive Setup: Office, HR, IT, Payroll, And Admin",
-      icon: Building2,
-    },
-  ],
-};
-
+  { title: "5 Custom Hires, Recruited Just For You", image: "/image/Frame(11).png" },
+  {
+    title: "Day-To-Day Support From A Fractional KMC Team Manager",
+    image: "/image/Frame(6).png",
+  },
+  {
+    title: "Cultural Training And Onboarding Done Right",
+    image: "/image/Frame(7).png",
+  },
+  {
+    title: "All-Inclusive Setup: Office, HR, IT, Payroll, And Admin",
+    image: "/image/Frame(8).png",
+  },
+],
+}
 
 
   export const images = [
