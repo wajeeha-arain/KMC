@@ -48,7 +48,7 @@ export default function Hero() {
           </div>
 
           {/* Circle Top Left */}
-          <div className="absolute -top-[-40px] -left-4 sm:-top-[-40px] sm:-left-[20px] w-[25%] sm:w-[28%] md:w-[30%] lg:w-[195px] aspect-square rounded-full overflow-hidden shadow-md">
+          <div className="absolute -top-[-40px] -left-4  w-[25%] sm:w-[28%] md:w-[30%] lg:w-[195px] aspect-square rounded-full overflow-hidden shadow-md">
             <Image
               src="/image/Ellipse 2(1).png"
               alt="Small circle 1"
@@ -58,7 +58,7 @@ export default function Hero() {
           </div>
 
           {/* Circle Bottom Right */}
-          <div className="absolute -bottom-[-50px] -right-4 sm:-bottom-[-20px] sm:-right-[2px] w-[26%] sm:w-[30%] md:w-[32%] lg:w-[204px] aspect-square rounded-full  overflow-hidden shadow-md">
+          <div className="absolute -bottom-[-50px] -right-4  w-[26%] sm:w-[30%] md:w-[32%] lg:w-[204px] aspect-square rounded-full  overflow-hidden shadow-md">
             <Image
               src="/image/Ellipse 3(1).png"
               alt="Small circle 2"

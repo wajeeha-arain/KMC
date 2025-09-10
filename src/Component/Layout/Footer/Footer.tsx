@@ -6,10 +6,10 @@ import { FaFacebookF, FaInstagram, FaLinkedinIn, FaXTwitter } from "react-icons/
 
 export default function Footer() {
   return (
-    <footer className="maincontainer bg-[#eef6fb] text-[#051636] pt-18 pb-6 mt-20">
-      <div className="">
+    <footer className=" bg-[#eef6fb] text-[#051636] pt-18 pb-6 mt-20">
+      <div className="maincontainer">
         {/* Top Section */}
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-[81px]">
+        <div className=" grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-[81px]">
  
           <div>
             <div className="flex items-center">
