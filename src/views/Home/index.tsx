@@ -4,6 +4,7 @@ import StartingFive from "./StartingFive";
 import Officeroom from "./Officeroom";
 import ClientSection from "./ClientSection";
 import PartnerSection from "./PartnerSection";
+import Hero from "./Hero";
 
 
 
@@ -15,7 +16,7 @@ import PartnerSection from "./PartnerSection";
 const Home = ({ }) => {
   return (
 <Layout>   
-     
+      <Hero />
      <TeamWork />
      <StartingFive />
      <Officeroom />
