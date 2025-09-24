@@ -31,7 +31,7 @@ export default function Footer() {
           </div>
 
           {/* Links */}
-          <div className="flex flex-1 justify-around text-[#051636] text-[15px] sm:text-[16px] font-[400] mt-6 lg:mt-0">
+          <div className="flex flex-1 lg:justify-around justify-between text-[#051636] text-[15px] sm:text-[16px] font-[400] mt-6 lg:mt-0">
             <div className="flex flex-col space-y-3 sm:space-y-[35px]">
               <a href="#" className="hover:text-orange-500 transition">Home</a>
               <a href="#" className="hover:text-orange-500 transition">Services</a>
