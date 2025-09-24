@@ -9,17 +9,25 @@ export default function SectionPartnerCards() {
     <section className="bg-white py-12">
       <div className="maincontainer mx-auto">
         {/* Header */}
-<p className="text-[#FF7200] font-bold uppercase text-[16px] sm:text-[20px] tracking-[6%]">
-  {`Industry Expertise`}
-</p>
+<div className="flex flex-col lg:flex-row items-start lg:items-center justify-between gap-4">
+  <div>
+    <p className="text-[#FF7200] font-bold uppercase text-[16px] sm:text-[20px] tracking-widest">
+      Industry Expertise
+    </p>
+    <h2 className="text-[#001738] font-semibold text-[28px] sm:text-[38px] lg:text-[55px] leading-snug py-4">
+      Industries We Power Up
+    </h2>
+    <p className="text-[15px] sm:text-[18px] text-[#001738] lg:pb-10 pb-4">
+      You bring the mission. We build the team.
+    </p>
+  </div>
 
-        <h2 className="text-[#001738] font-semibold text-[28px] sm:text-[38px] lg:text-[55px] leading-snug py-4">
-          Industries We Power Up
-        </h2>
- 
-        <p className="text-[15px] sm:text-[18px] text-[#001738] lg:pb-10 pb-4 ">
-       {`  You bring the mission. We build the team.`}
-        </p>
+  {/* Button on the right */}
+  <button className="bg-[#FF7200] text-white font-dmSans font-semibold text-[16px] capitalize rounded-full px-[30px] py-[16px] leading-none hover:bg-[#e56700] transition  mt-24">
+    See Case Studies
+  </button>
+</div>
+
 
         {/* Sub Heading */}
 
