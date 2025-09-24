@@ -7,6 +7,7 @@ import PartnerSection from "./PartnerSection";
 import Hero from "./Hero";
 import PartnerSolutions from "./PartnerSolutions";
 import PricingSection from "./PricingSection";
+import SectionPartnerCards from "./SectionPartnerCards";
 
 
 
@@ -17,16 +18,17 @@ import PricingSection from "./PricingSection";
 
 const Home = ({ }) => {
   return (
-<Layout>   
+    <Layout>
       <Hero />
-     <TeamWork />
-     <StartingFive />
-     <Officeroom />
-     <ClientSection />
-     <PartnerSection />
-<PartnerSolutions />
-<PricingSection />
-</Layout>
+      <TeamWork />
+      <StartingFive />
+      <Officeroom />
+      <ClientSection />
+      <PartnerSection />
+      <PartnerSolutions />
+      <PricingSection />
+         <SectionPartnerCards />
+    </Layout>
 
 
 

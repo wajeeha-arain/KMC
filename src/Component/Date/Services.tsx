@@ -232,3 +232,58 @@ export const pricingData: PricingData = {
     { src: "/image/Ellipse 36.png", top: "65%", left: "56%" },
   ],
 };
+// src/Component/Date/partnerSolutionsData.ts
+
+export interface PartnerCard1 {
+  id: number;
+  icons: string;
+  title: string;
+  desc: string;
+  painPoint: string[];
+  solution: string[];
+  dark?: boolean;
+}
+
+export const PartnerCards: PartnerCard1[] = [
+  {
+    id: 1,
+    icons: "/image/Documentation featured icon(1).png",
+    title: "SaaS & Engineering",
+    desc: "Full-stack, DevOps, QA, Product, you name it",
+    painPoint: ["Talent shortage", "High development costs", "Scaling challenges"],
+    solution: ["Elite dev teams", "70% cost reduction", "Rapid scaling"],
+    dark: true,
+  },
+  {
+    id: 2,
+    icons: "/image/Documentation featured icon.png",
+    title: "Cybersecurity",
+    desc: "SOC analysts, compliance, and red-team specialists",
+    painPoint: ["Skills gap", "Compliance complexity", "24/7 monitoring needs"],
+    solution: ["Certified experts", "Compliance support", "Round-the-clock coverage"],
+  },
+  {
+    id: 3,
+    icons: "/image/Documentation featured icon(3).png",
+    title: "Fintech",
+    desc: "CPAs, analysts, underwriters, auditors",
+    painPoint: ["Regulatory complexity", "Risk management", "Customer trust"],
+    solution: ["Regulatory expertise", "Risk mitigation", "Trusted operations"],
+  },
+  {
+    id: 4,
+    icons: "/image/Documentation featured icon(4).png",
+    title: "Healthcare Support",
+    desc: "Claims processors, patient advocates, insurance pros",
+    painPoint: ["HIPAA compliance", "Patient data security", "Specialized knowledge"],
+    solution: ["HIPAA expertise", "Secure infrastructure", "Healthcare specialists"],
+  },
+  {
+    id: 5,
+    icons: "/image/Documentation featured icon(5).png",
+    title: "Sales & Marketing",
+    desc: "SDRs, content, growth marketers, designers",
+    painPoint: ["Campaign costs", "Creative talent", "Performance tracking"],
+    solution: ["Cost-effective campaigns", "Creative expertise", "Analytics mastery"],
+  },
+];
