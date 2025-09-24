@@ -5,6 +5,7 @@ import Officeroom from "./Officeroom";
 import ClientSection from "./ClientSection";
 import PartnerSection from "./PartnerSection";
 import Hero from "./Hero";
+import PartnerSolutions from "./PartnerSolutions";
 
 
 
@@ -22,7 +23,7 @@ const Home = ({ }) => {
      <Officeroom />
      <ClientSection />
      <PartnerSection />
-
+<PartnerSolutions />
 </Layout>
 
 
