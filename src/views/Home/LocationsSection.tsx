@@ -4,7 +4,7 @@ import React, { useState } from "react";
 import Image from "next/image";
 
 export default function LocationsSection() {
-  // State to track which location is selected
+  
   const [selected, setSelected] = useState(0);
 
   const locations = [

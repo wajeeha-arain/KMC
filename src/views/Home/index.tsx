@@ -14,6 +14,8 @@ import TeamSpaces from "./TeamSpaces";
 import SecuritySection from "./SecuritySection";
 import SecurityCTA from "./SecurityCTA";
 import CustomerSuccess from "./CustomerSuccess";
+import CertifiedExcellence from "./CertifiedExcellence";
+import TransformBusiness from "./TransformBusiness";
 
 
 
@@ -40,6 +42,8 @@ const Home = ({ }) => {
          <SecuritySection />
          <SecurityCTA />
          <CustomerSuccess />
+         <CertifiedExcellence />
+         {/* <TransformBusiness /> */}
     </Layout>
 
 
