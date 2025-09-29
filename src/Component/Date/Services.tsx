@@ -287,3 +287,107 @@ export const PartnerCards: PartnerCard1[] = [
     solution: ["Cost-effective campaigns", "Creative expertise", "Analytics mastery"],
   },
 ];
+
+
+// /Component/Data/CertifiedExcellenceData.ts
+
+export const certifiedExcellenceCards = [
+  {
+    id: 1,
+    img: "/image/Award Icon Container.png",
+    title: "B-Corp Certified",
+  },
+  {
+    id: 2,
+    img: "/image/folder-star 1.png",
+    title: "Great Place To Work",
+  },
+  {
+    id: 3,
+    img: "/image/medal-military 1.png",
+    title: "Best Places To Work",
+  },
+  {
+    id: 4,
+    img: "/image/user-focus 1.png",
+    title: "HR Asia Best Companies",
+  },
+];
+
+
+
+// /Component/Data/LocationsData.ts
+
+export const locations = [
+  { name: "Metro Manila", image: "/image/Image.png" },
+  { name: "Clark", image: "/image/Image(1).png" },
+  { name: "Cebu", image: "/image/Image(2).png" },
+];
+
+
+
+
+
+
+
+
+// /Component/Data/SecurityData.ts
+
+export const securityBoxes = [
+  {
+    title: "System Integration & Access Control",
+    description:
+      "Say 5 or any number, same data goes here or text you want in the box.",
+    image: "/image/gear-six 1.png",
+  },
+  {
+    title: "Mirrored Policies, Custom Environments",
+    description:
+      "Need your own VPN? Endpoint protection software? SOC2-style access controls? Consider it done. We replicate your environment right down to device-level controls.",
+    image: "/image/flower-lotus 1.png",
+  },
+  {
+    title: "ISO 27001 Certified Infrastructure",
+    description:
+      "You get a secure foundation—certified, audited, and designed to scale—plus the flexibility to layer your own controls on top.",
+    image: "/image/bridge 1.png",
+  },
+  {
+    title: "8 Gbps Internet with Dual ISPs & Backup Power",
+    description:
+      "Zero downtime, even during typhoons or outages. Your team stays online, protected, and productive.",
+    image: "/image/globe-hemisphere-west 1.png",
+  },
+  {
+    title: "Role-Based Access & Full Device Encryption",
+    description:
+      "No one touches your systems unless you say so. Every workstation we provide comes fully encrypted, locked down, and monitored.",
+    image: "/image/lock-key 1.png",
+  },
+  {
+    title: "Global Compliance, Local Execution",
+    description:
+      "From GDPR to the Philippine Data Privacy Act—we keep you compliant in every market we operate.",
+    image: "/image/scales 1.png",
+  },
+];
+
+
+
+// /Component/Data/TransformData.ts
+
+export const leftImages = [
+  "/image/Ellipse 34(1).png",
+  "/image/Ellipse 37(1).png",
+  "/image/Ellipse 39(1).png",
+  "/image/Ellipse 36(2).png",
+  "/image/Ellipse 40(1).png",
+];
+
+export const rightImages = [
+  "/image/Ellipse 39(2).png",
+  "/image/Ellipse 36(3).png",
+  "/image/Ellipse 40(2).png",
+  "/image/Ellipse 38(1).png",
+  "/image/Ellipse 35(1).png",
+];

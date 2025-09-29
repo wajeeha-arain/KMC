@@ -2,31 +2,9 @@
 
 import React from "react";
 import Image from "next/image";
+import { certifiedExcellenceCards } from "@/Component/Date/Services";
 
 export default function CertifiedExcellence() {
-  const cards = [
-    {
-      id: 1,
-      img: "/image/Award Icon Container.png",
-      title: "B-Corp Certified",
-    },
-    {
-      id: 2,
-      img: "/image/folder-star 1.png",
-      title: "Great Place To Work",
-    },
-    {
-      id: 3,
-      img: "/image/medal-military 1.png",
-      title: "Best Places To Work",
-    },
-    {
-      id: 4,
-      img: "/image/user-focus 1.png",
-      title: "HR Asia Best Companies",
-    },
-  ];
-
   return (
     <section className="py-16 px-4 sm:px-6 lg:px-8">
       <div className="maincontainer mx-auto ">
@@ -45,7 +23,7 @@ export default function CertifiedExcellence() {
 
         {/* Cards */}
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-4 gap-6 mt-12">
-          {cards.map((card) => (
+          {certifiedExcellenceCards.map((card) => (
             <div
               key={card.id}
               className="bg-white rounded-2xl border-2 border-[#FF720012] p-6 flex flex-col items-center justify-center gap-4 h-[215px] transition-transform duration-300 hover:shadow-lg hover:scale-105"
@@ -69,3 +47,10 @@ export default function CertifiedExcellence() {
     </section>
   );
 }
+
+
+
+
+
+
+

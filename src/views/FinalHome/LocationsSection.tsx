@@ -2,16 +2,10 @@
 
 import React, { useState } from "react";
 import Image from "next/image";
+import { locations } from "@/Component/Date/Services";
 
 export default function LocationsSection() {
-  
   const [selected, setSelected] = useState(0);
-
-  const locations = [
-    { name: "Metro Manila", image: "/image/Image.png" },
-    { name: "Clark", image: "/image/Image(1).png" },
-    { name: "Cebu", image: "/image/Image(2).png" },
-  ];
 
   return (
     <section

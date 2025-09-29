@@ -2,49 +2,11 @@
 
 import React from "react";
 import Image from "next/image";
+import { securityBoxes } from "@/Component/Date/Services";
 
 export default function SecuritySection() {
-  const securityBoxes = [
-    {
-      title: "System Integration & Access Control",
-      description:
-        "Say 5 or any number, same data goes here or text you want in the box.",
-      image: "/image/gear-six 1.png",
-    },
-    {
-      title: "Mirrored Policies, Custom Environments",
-      description:
-        "Need your own VPN? Endpoint protection software? SOC2-style access controls? Consider it done. We replicate your environment right down to device-level controls.",
-      image: "/image/flower-lotus 1.png",
-    },
-    {
-      title: "ISO 27001 Certified Infrastructure",
-      description:
-        "You get a secure foundation—certified, audited, and designed to scale—plus the flexibility to layer your own controls on top.",
-      image: "/image/bridge 1.png",
-    },
-    {
-      title: "8 Gbps Internet with Dual ISPs & Backup Power",
-      description:
-        "Zero downtime, even during typhoons or outages. Your team stays online, protected, and productive.",
-      image: "/image/globe-hemisphere-west 1.png",
-    },
-    {
-      title: "Role-Based Access & Full Device Encryption",
-      description:
-        "No one touches your systems unless you say so. Every workstation we provide comes fully encrypted, locked down, and monitored.",
-      image: "/image/lock-key 1.png",
-    },
-    {
-      title: "Global Compliance, Local Execution",
-      description:
-        "From GDPR to the Philippine Data Privacy Act—we keep you compliant in every market we operate.",
-      image: "/image/scales 1.png",
-    },
-  ];
-
   return (
-    <section className="relative  w-full bg-[#FFFAF5F2] py-12 md:py-20 lg:py-[100px] lg:mt-[80px]">
+    <section className="relative w-full bg-[#FFFAF5F2] py-12 md:py-20 lg:py-[100px] lg:mt-[80px]">
       <div className="maincontainer px-4 sm:px-6 md:px-10 lg:px-[135px]">
         {/* Header */}
         <p className="text-[#FF7200] font-bold text-base sm:text-lg md:text-xl uppercase tracking-wide">
@@ -72,7 +34,7 @@ export default function SecuritySection() {
         </h3>
 
         {/* Security Boxes */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 lg:gap-0  max-w-[1172px] w-full mt-8">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 lg:gap-0 max-w-[1172px] w-full mt-8">
           {securityBoxes.map((box, index) => (
             <div
               key={index}
