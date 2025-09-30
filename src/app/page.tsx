@@ -10,8 +10,8 @@ const page = () => {
       <FinalHome />
      
       
-    </div>
-  )
+    </div>    
+  )                                                          
 }
 
 export default page

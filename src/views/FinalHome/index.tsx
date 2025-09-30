@@ -9,7 +9,6 @@ import TeamSpaces from "./TeamSpaces"
 import SecuritySection from "./SecuritySection"
 import SecurityCTA from "./SecurityCTA"
 import CustomerSuccess from "./CustomerSuccess"
-import CertifiedExcellence from "./CertifiedExcellence"
 import TransformBusiness from "./TransformBusiness"
 import PartnerSolutions from "./PartnerSolutions"
 
@@ -27,7 +26,6 @@ const FinalHome = ({ }) => {
      <SecuritySection />
      <SecurityCTA />
      <CustomerSuccess />
-     <CertifiedExcellence />
      <TransformBusiness />
  
         </>
