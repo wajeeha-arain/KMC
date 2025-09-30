@@ -1,5 +1,5 @@
 
-import FinalHome from '@/views/Finalhome'
+import FinalHome from '@/views/FinalHome'
 import Home from '@/views/Home'
 import React from 'react'
 

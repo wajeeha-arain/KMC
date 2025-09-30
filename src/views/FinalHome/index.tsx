@@ -1,6 +1,6 @@
 
 import Navbar from "@/Component/Layout/Navbar/Navbar"
-import PartnerSolutions from "./PartnerSolutions"
+
 import PricingSection from "./PricingSection"
 import SectionPartnerCards from "./SectionPartnerCards"
 import PremiumWorkspaces from "./PremiumWorkspaces"
@@ -11,6 +11,7 @@ import SecurityCTA from "./SecurityCTA"
 import CustomerSuccess from "./CustomerSuccess"
 import CertifiedExcellence from "./CertifiedExcellence"
 import TransformBusiness from "./TransformBusiness"
+import PartnerSolutions from "./PartnerSolutions"
 
 
 const FinalHome = ({ }) => {
