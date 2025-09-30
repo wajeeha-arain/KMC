@@ -6,20 +6,33 @@ import { certifiedExcellenceCards } from "@/Component/Date/Services";
 
 export default function CertifiedExcellence() {
   return (
-    <section className="py-16 px-4 sm:px-6 lg:px-8">
-      <div className="maincontainer mx-auto ">
-        {/* Heading */}
-        <h2 className="text-[#001738] font-dmSans font-semibold text-3xl sm:text-4xl md:text-5xl lg:text-[55px] leading-snug">
-          Certified Excellence
-        </h2>
+    <section className="lg:py-10 py-6 px-4 sm:px-6 lg:px-8">
+ 
+      <div className="maincontainer mx-auto">
+     \
+        <div className="flex flex-col lg:flex-row items-center justify-between gap-6 lg:text-left text-center">
+      
+          <div className="flex flex-col max-w-3xl">
+            <h2 className="text-[#001738] font-dmSans font-semibold text-3xl sm:text-4xl md:text-5xl lg:text-[55px] leading-snug">
+              Certified Excellence
+            </h2>
 
-        <p className="text-[#6B717A] mt-4 text-base sm:text-lg md:text-xl leading-relaxed max-w-[880px]">
-          Recognized by leading organizations for our workplace culture and practices
-        </p>
+            <p className="text-[#6B717A] mt-4 text-base sm:text-lg md:text-xl leading-relaxed max-w-[880px]">
+              Recognized by leading organizations for our workplace culture and practices
+            </p>
 
-        <p className="text-[#FF7200] font-bold text-xl sm:text-2xl md:text-[30px] mt-6">
-          It’s why we beat the BPO industry on retention by 2x.
-        </p>
+            <p className="text-[#FF7200] font-bold text-xl sm:text-2xl md:text-[30px] mt-6 whitespace-nowrap">
+              It’s why we beat the BPO industry on retention by 2x.
+            </p>
+          </div>
+
+        
+          <div className="w-full lg:w-auto text-center lg:mt-10 lg:mb-0 mb-4">
+            <button className="bg-[#FF7200] text-white font-dmSans font-semibold text-[14px] sm:text-[16px] capitalize rounded-full px-8 sm:px-10 py-4 sm:py-5 leading-none hover:bg-[#e56700] transition">
+              Our Talent Strategy
+            </button>
+          </div>
+        </div>
 
         {/* Cards */}
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-4 gap-6 mt-12">
@@ -47,10 +60,3 @@ export default function CertifiedExcellence() {
     </section>
   );
 }
-
-
-
-
-
-
-

@@ -40,25 +40,25 @@ export default function TeamSpaces() {
   return (
     <section className="relative bg-white py-20  ">
       <div className="maincontainer mx-auto grid grid-cols-1 lg:grid-cols-2 gap-10 relative z-10">
-        {/* Left Content */}
-        <div>
+
+        <div className="lg:text-left text-center">
           <h2 className="text-[#001738] font-semibold text-[32px] sm:text-[45px] lg:text-[55px] md:leading-[62px]">
             {`Happy teams don't just 
             work better—they stick 
             around longer.`}
           </h2>
 
-          <p className="text-[#6B717A] text-[16px] sm:text-[18px] mt-6">
+          <p className="text-[#6B717A] text-[15px] sm:text-[18px] mt-6">
             {`Experience the difference that thoughtfully designed workspaces make
             for your team's productivity and retention.`}
           </p>
 
           <button className="mt-8 bg-[#FF7200] text-white font-semibold text-[16px] px-8 py-3 rounded-full capitalize">
-            Tour The Spaces
+            {`  Tour The Spaces`}
           </button>
         </div>
 
-        {/* Right Content - Features */}
+
         <div className="space-y-6">
           {features.map((feature) => (
             <div
@@ -70,12 +70,12 @@ export default function TeamSpaces() {
                 <Image
                   src={feature.img}
                   alt={feature.title}
-                  width={32}
-                  height={32}
+                  width={30}
+                  height={30}
                 />
               </div>
 
-              {/* Text */}
+
               <div>
                 <h4 className="text-[#001738] font-semibold text-[20px] sm:text-[24px] leading-snug">
                   {feature.title}
@@ -85,22 +85,22 @@ export default function TeamSpaces() {
             </div>
           ))}
         </div>
-      
-
-      {/* Background Image bottom aligned */}
-
-<div className="absolute -bottom-40 left-1/3 -translate-x-1/2 max-w-[900px] pointer-events-none z-0 lg:flex hidden">
-  <Image
-    src="/image/NLK05459 2.png"
-    alt="Happy Team"
-    width={890}
-    height={960}
-    className="object-contain"
-  />
-</div>
 
 
-</div>
+
+
+        <div className="absolute -bottom-40 left-1/3 -translate-x-1/2 max-w-[900px] pointer-events-none z-0 lg:flex hidden">
+          <Image
+            src="/image/NLK05459 2.png"
+            alt="Happy Team"
+            width={890}
+            height={960}
+            className="object-contain"
+          />
+        </div>
+
+
+      </div>
     </section>
   );
 }

@@ -327,10 +327,6 @@ export const locations = [
 
 
 
-
-
-
-
 // /Component/Data/SecurityData.ts
 
 export const securityBoxes = [
@@ -374,6 +370,8 @@ export const securityBoxes = [
 
 
 
+
+
 // /Component/Data/TransformData.ts
 
 export const leftImages = [
@@ -391,3 +389,47 @@ export const rightImages = [
   "/image/Ellipse 38(1).png",
   "/image/Ellipse 35(1).png",
 ];
+
+
+
+
+// // /Component/TeamSpaces/TeamSpacesData.ts
+// export interface features {
+//   id: number;
+//   img: string;
+//   title: string;
+//   desc: string;
+// }
+
+// export const teamSpacesFeatures: features[] = [
+//   {
+//     id: 1,
+//     img: "/image/globe-hemisphere-east-1.png",
+//     title: "30+ Flexible Office Locations",
+//     desc: "Philippines, Vietnam, and more",
+//   },
+//   {
+//     id: 2,
+//     img: "/image/frame-15.png",
+//     title: "8 Gbps Internet & Enterprise IT",
+//     desc: "Because lag kills morale",
+//   },
+//   {
+//     id: 3,
+//     img: "/image/leaf-1.png",
+//     title: "Biophilic Design",
+//     desc: "Real plants, natural light, and fresh air",
+//   },
+//   {
+//     id: 4,
+//     img: "/image/frame-17.png",
+//     title: "Wellness Amenities",
+//     desc: "Massage chairs, quiet rooms, fitness studios",
+//   },
+//   {
+//     id: 5,
+//     img: "/image/frame-18.png",
+//     title: "CASA by KMC",
+//     desc: "Fully furnished employee housing, minutes from the office",
+//   },
+// ];

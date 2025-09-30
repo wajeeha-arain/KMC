@@ -13,7 +13,7 @@ export default function LocationsSection() {
       style={{ backgroundImage: "url('/image/Background Image(1).png')" }}
     >
       <div className="maincontainer mx-auto flex flex-col items-center h-full">
-        {/* Buttons */}
+      
         <div className="flex gap-3 bg-white rounded-2xl p-2 shadow-md -mt-8">
           {locations.map((location, index) => (
             <button
@@ -52,4 +52,4 @@ export default function LocationsSection() {
       </div>
     </section>
   );
-}
+}  

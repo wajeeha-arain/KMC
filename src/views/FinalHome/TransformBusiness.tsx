@@ -48,15 +48,15 @@ export default function TransformBusiness() {
         {/* ✅ Center Content */}
         <div className="text-center max-w-2xl">
           <p className="text-[#FF7200] font-dmSans font-bold text-[20px] uppercase mb-4">
-            Ready to Transform Your Business?
+           {` Ready to Transform Your Business?`}
           </p>
 
-          <h2 className="text-[#001738] font-dmSans font-semibold text-[32px] sm:text-[40px] lg:text-[55px] leading-snug mb-4">
+          <h2 className="text-[#001738] font-dmSans font-semibold text-[32px] sm:text-[42px] lg:text-[55px] leading-snug mb-4">
             Lets Build Your Offshore Dream Team
           </h2>
 
-          <p className="text-[#6B717A] font-dmSans text-[18px] mb-8 max-w-[554px] mx-auto">
-            No fluff. No runarounds. Just an unfair hiring advantage.
+          <p className="text-[#6B717A] text-[15px] lg:text-[18px] mb-8 max-w-[554px] mx-auto">
+           {` No fluff. No runarounds. Just an unfair hiring advantage.`}
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center">

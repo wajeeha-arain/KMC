@@ -6,32 +6,34 @@ import { securityBoxes } from "@/Component/Date/Services";
 
 export default function SecuritySection() {
   return (
-    <section className="relative w-full bg-[#FFFAF5F2] py-12 md:py-20 lg:py-[100px] lg:mt-[80px]">
+    <section className="relative w-full bg-[#FFFAF5F2] py-12 md:py-20 lg:py-[100px] lg:mt-[80px]  pb-20">
       <div className="maincontainer px-4 sm:px-6 md:px-10 lg:px-[135px]">
         {/* Header */}
-        <p className="text-[#FF7200] font-bold text-base sm:text-lg md:text-xl uppercase tracking-wide">
-          Enterprise-Grade Security
+            <div className="lg:text-left text-center">
+                      <p className="text-[#FF7200] font-bold text-base sm:text-lg md:text-[20px] uppercase tracking-wide">
+      {`    Enterprise-Grade Security`}
         </p>
 
-        <h2 className="text-[#001738] font-semibold text-2xl sm:text-3xl md:text-4xl lg:text-[55px] leading-snug lg:leading-[62px] py-4">
-          Enterprise-Grade Security, Tailored to You
+        <h2 className="text-[#001738] font-semibold text-[32px] sm:text-[42px] md:text-[46px] lg:text-[55px] leading-snug lg:leading-[62px] py-4">
+       {`   Enterprise-Grade Security, Tailored to You`}
         </h2>
 
-        <p className="text-[#001738] text-base sm:text-lg md:text-xl max-w-[1172px]">
-          Global Brands Trust Us—Because We Build Security Around Them.
+        <p className="text-[#001738] text-[15px] md:text-[18] max-w-[1172px]">
+         {` Global Brands Trust Us—Because We Build Security Around Them.`}
         </p>
 
-        <p className="text-[#001738] text-base sm:text-lg md:text-xl max-w-[1172px] py-4">
-          At KMC, we don’t just offer secure infrastructure—we customize it to
+        <p className="text-[#001738] text-[15px] md:text-[18px] max-w-[1172px] py-4">
+    {`      At KMC, we don’t just offer secure infrastructure—we customize it to
           mirror your exact enterprise standards. Whether you’re a SaaS unicorn,
           a fintech heavyweight, or a cybersecurity powerhouse, we replicate
           your security posture offshore so you stay compliant, confident, and
-          in control.
+          in control.`}
         </p>
 
         <h3 className="font-bold text-xl sm:text-2xl md:text-[30px] text-[#FF7200] mt-8">
-          Here’s what we secure your way:
+    {`      Here’s what we secure your way:`}
         </h3>
+            </div>
 
         {/* Security Boxes */}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 lg:gap-0 max-w-[1172px] w-full mt-8">
@@ -51,10 +53,10 @@ export default function SecuritySection() {
                   />
                 </div>
               )}
-              <h4 className="font-bold text-lg sm:text-xl text-[#001738]">
+              <h4 className="font-bold text-lg sm:text-[22px] text-[#001738]">
                 {box.title}
               </h4>
-              <p className="text-sm sm:text-base md:text-[16px] text-[#6B717A] leading-relaxed">
+              <p className="text-[13px] sm:text-[14] md:text-[16px] text-[#6B717A] leading-relaxed">
                 {box.description}
               </p>
             </div>

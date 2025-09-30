@@ -1,3 +1,4 @@
+
 import Navbar from "@/Component/Layout/Navbar/Navbar"
 import PartnerSolutions from "./PartnerSolutions"
 import PricingSection from "./PricingSection"
@@ -12,7 +13,7 @@ import CertifiedExcellence from "./CertifiedExcellence"
 import TransformBusiness from "./TransformBusiness"
 
 
-const FinalHome = () => {
+const FinalHome = ({ }) => {
   return (
     <>
   <Navbar />

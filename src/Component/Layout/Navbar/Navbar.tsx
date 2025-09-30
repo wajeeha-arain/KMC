@@ -9,7 +9,7 @@ export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
 
   const navLinks = [
-    { name: "Services", href: "#" },
+  { name: "Services", href:"#" },
     { name: "Industries", href: "#" },
     { name: "Why KMC", href: "#" },
     { name: "Offices", href: "#" },
