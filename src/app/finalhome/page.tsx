@@ -1,10 +1,10 @@
-import Home from "@/views/Home";
+import FinalHome from "@/views/FinalHome";
 import React from "react";
 
 const page = () => {
   return (
     <div>
-      <Home />
+      <FinalHome />
     </div>
   );
 };
