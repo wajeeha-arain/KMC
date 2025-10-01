@@ -21,9 +21,9 @@ export default function TransformBusiness() {
     <section className="py-16 px-6">
       <div className="maincontainer mx-auto flex flex-col lg:flex-row items-center justify-between gap-12">
         
-        {/* ✅ Left Side */}
+      
         <div>
-          {/* Large Screen → Vertical (2 then 3) */}
+     
           <div className="hidden lg:flex flex-row gap-8">
             <div className="flex flex-col gap-6 mt-12 items-center">
               {leftImages.slice(0, 2).map((img, i) => (

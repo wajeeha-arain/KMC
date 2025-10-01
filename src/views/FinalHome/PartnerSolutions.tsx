@@ -79,7 +79,7 @@ export default function PartnerSolutions() {
           ))}
 
        
-          <div className="rounded-2xl overflow-hidden shadow-md w-full max-w-[370px] aspect-[4/5]">
+          <div className="rounded-2xl overflow-hidden shadow-md transition duration-300 hover:scale-[1.02]  w-full max-w-[370px] aspect-[4/5]">
             <Image
               src="/image/Container.png"
               alt="KMC Office"

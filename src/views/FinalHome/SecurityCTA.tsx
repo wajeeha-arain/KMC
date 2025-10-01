@@ -9,17 +9,17 @@ export default function SecurityCTA() {
         
       
         <h2 className="text-white font-semibold text-[22px] sm:text-[28px] lg:text-[32px] leading-tight max-w-[492px] text-center lg:text-left">
-          It’s your stack. Your standards. <br className="hidden sm:block" /> Just with KMC execution.
+         {` It’s your stack. Your standards. `}<br className="hidden sm:block" /> {`Just with KMC execution.`}
         </h2>
 
    
         <div className="flex flex-col sm:flex-row items-center gap-4">
         
-          <button className="bg-[#FF7200] text-white text-[16px] font-semibold rounded-full px-6 sm:px-8 py-3 sm:py-4 whitespace-nowrap">
+          <button className="bg-[#FF7200] text-white text-[16px] font-semibold rounded-full px-6 sm:px-8 py-3 sm:py-4 ">
             Meet Our Security Engineers
           </button>
 
-          <button className="bg-transparent border-2 border-white text-white text-[16px] font-semibold rounded-full px-6 sm:px-8 py-3 sm:py-4 whitespace-nowrap">
+          <button className="bg-transparent border-2 border-white text-white text-[16px] font-semibold rounded-full px-8 py-3 sm:py-4">
             See How We Integrate
           </button>
         </div>

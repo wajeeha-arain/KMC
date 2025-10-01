@@ -37,10 +37,10 @@ export default function CustomerSuccess() {
           </div>
 
       
-          <div className="absolute bottom-4 sm:bottom-6 left-1/2 -translate-x-1/2 px-2 sm:px-6 w-full">
+          <div className="absolute bottom-2 sm:bottom-6 left-1/2 -translate-x-1/2 px-2 sm:px-6 w-full">
          
             <div
-              className="flex items-center gap-2 max-w-[160px] sm:max-w-[200px] md:max-w-[220px] 
+              className="sm:flex hidden items-center gap-2 max-w-[160px] sm:max-w-[200px] md:max-w-[220px] 
               h-auto sm:h-[65px] bg-white rounded-full 
               px-2 py-2 sm:py-[6px] text-left mb-4 sm:mb-6"
             >
@@ -64,7 +64,7 @@ export default function CustomerSuccess() {
             </div>
 
             {/* Quote */}
-            <p className="text-[15px] sm:text-[22px] md:text-[28px] lg:text-[34px] font-semibold leading-[120%] text-left text-white drop-shadow-lg">
+            <p className="text-[15px] sm:text-[22px] md:text-[28px] lg:text-[34px] sm:text-left text-center font-semibold leading-[120%]  text-white drop-shadow-lg">
               “We scaled 100+ engineers in 90 days. No hiccups. No excuses.”
             </p>
           </div>
