@@ -14,12 +14,12 @@ const WhyKMC = () => {
   const renderCard = (card: KMCDataItem, i: number) => (
     <div
       key={i}
-      className={`relative rounded-[20px] border hover:bg-[#0A1A2F] hover:text-white border-[#D6DCE3] p-2 ${
+      className={`relative rounded-[20px] border hover:bg-[#0A1A2F] hover:text-white border-[#D6DCE3] p-2 lg:m-0 m-3   ${
         card.dark ? "hover:bg-[#0A1A2F] hover:text-[#fff]" : "bg-white"
       }`}
       style={{ width: "100%", maxWidth: "370px" }}
     >
-      <div className="w-full h-[450px] relative overflow-hidden rounded-[16px]">
+      <div className="w-full h-[450px] relative overflow-hidden rounded-[16px] ">
         <Image
           src={card.img}
           alt={card.title}
@@ -66,7 +66,7 @@ const WhyKMC = () => {
           </div>
 
          
-          <div className="hidden lg:flex lg:flex-col lg:items-center lg:gap-10">
+          <div className="hidden lg:flex lg:flex-col lg:items-center  lg:gap-10">
          
             <div className="flex justify-center gap-10">
               {allCards.slice(0, 3).map(renderCard)}

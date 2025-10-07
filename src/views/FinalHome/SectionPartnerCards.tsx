@@ -6,7 +6,7 @@ import { PartnerCards } from "@/Component/Date/Services";
 
 export default function SectionPartnerCards() {
   return (
-    <section className="bg-white py-12 sm:py-16 lg:py-20">
+    <section className= "  bg-white py-12 sm:py-16 lg:py-20">
       <div className="maincontainer mx-auto px-4 sm:px-6 lg:px-8">
      
         <div className="flex flex-col lg:flex-row items-center justify-between gap-6">
@@ -15,7 +15,7 @@ export default function SectionPartnerCards() {
             <p className="text-[#FF7200] font-bold uppercase text-[14px] sm:text-[16px] lg:text-[20px] tracking-widest lg:text-left text-center">
               Industry Expertise
             </p>
-            <h2 className="text-[#001738] font-semibold text-[32px] sm:text-[42px] lg:text-[55px] py-3 whitespace-nowrap lg:text-left text-center">
+            <h2 className="text-[#001738] font-semibold text-[32px] sm:text-[42px] lg:text-[55px] py-3 lg:whitespace-nowrap lg:text-left text-center">
               Industries We Power Up
             </h2>
             <p className="text-[14px] sm:text-[16px] lg:text-[18px] text-[#001738] pb-2 lg:pb-10 lg:text-left text-center">
