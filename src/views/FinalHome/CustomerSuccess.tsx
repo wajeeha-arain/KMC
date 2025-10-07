@@ -7,7 +7,7 @@ import { MdPlayArrow } from "react-icons/md";
 export default function CustomerSuccess() {
   return (
     <section className="w-full bg-white py-14 sm:py-20">
-      <div className="max-w-[1170px] mx-auto px-4 text-center">
+      <div className="maincontainer max-w-[1170px] mx-auto px-4 text-center">
         <p className="text-[#FF7200] uppercase tracking-[6%] font-bold text-[16px] sm:text-[20px]">
           Customer Success Stories
         </p>

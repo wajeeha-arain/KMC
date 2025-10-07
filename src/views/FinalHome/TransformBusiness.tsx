@@ -2,7 +2,7 @@
 
 import React from "react";
 import Image from "next/image";
-import { leftImages, rightImages } from "@/Component/Date/Services"; 
+import { leftimage, rightimage } from "@/Component/Date/Services"; 
 
 export default function TransformBusiness() {
   const CircleImage = ({ src, alt }: { src: string; alt: string }) => (
@@ -18,7 +18,7 @@ export default function TransformBusiness() {
   );
 
   return (
-    <section className="py-16 px-6">
+    <section className="lg:py-20  py-6 ">
       <div className="maincontainer mx-auto flex flex-col lg:flex-row items-center justify-between gap-12">
         
       
@@ -26,12 +26,12 @@ export default function TransformBusiness() {
      
           <div className="hidden lg:flex flex-row gap-8">
             <div className="flex flex-col gap-6 mt-12 items-center">
-              {leftImages.slice(0, 2).map((img, i) => (
+              {leftimage.slice(0, 2).map((img, i) => (
                 <CircleImage key={i} src={img} alt={`Left User ${i + 1}`} />
               ))}
             </div>
             <div className="flex flex-col gap-6 items-center">
-              {leftImages.slice(2, 5).map((img, i) => (
+              {leftimage.slice(2, 5).map((img, i) => (
                 <CircleImage key={i} src={img} alt={`Left User ${i + 3}`} />
               ))}
             </div>
@@ -39,7 +39,7 @@ export default function TransformBusiness() {
 
           {/* Small Screen → Horizontal */}
           <div className="flex lg:hidden flex-row gap-4 flex-wrap justify-center">
-            {leftImages.map((img, i) => (
+            {leftimage.map((img, i) => (
               <CircleImage key={i} src={img} alt={`Left User ${i + 1}`} />
             ))}
           </div>
@@ -74,12 +74,12 @@ export default function TransformBusiness() {
           {/* Large Screen → Vertical (3 then 2) */}
           <div className="hidden lg:flex flex-row gap-8">
             <div className="flex flex-col gap-6 items-center">
-              {rightImages.slice(0, 3).map((img, i) => (
+              {rightimage.slice(0, 3).map((img, i) => (
                 <CircleImage key={i} src={img} alt={`Right User ${i + 1}`} />
               ))}
             </div>
             <div className="flex flex-col gap-6 mt-12 items-center">
-              {rightImages.slice(3, 5).map((img, i) => (
+              {rightimage.slice(3, 5).map((img, i) => (
                 <CircleImage key={i} src={img} alt={`Right User ${i + 4}`} />
               ))}
             </div>
@@ -87,7 +87,7 @@ export default function TransformBusiness() {
 
           {/* Small Screen → Horizontal */}
           <div className="flex lg:hidden flex-row gap-4 flex-wrap justify-center">
-            {rightImages.map((img, i) => (
+            {rightimage.map((img, i) => (
               <CircleImage key={i} src={img} alt={`Right User ${i + 1}`} />
             ))}
           </div>

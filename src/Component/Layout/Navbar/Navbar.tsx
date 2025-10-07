@@ -18,7 +18,7 @@ export default function Navbar() {
 
   return (
     <nav className="w-full bg-white top-0 left-0 z-50">
-      <div className="maincontainer mx-auto flex items-center justify-between py-4 px-6 lg:px-[90px]">
+      <div className="maincontainer mx-auto flex items-center justify-between py-4 px-6 ">
         
         {/* ✅ Logo */}
         <Link href="/" className="flex items-center">
@@ -33,7 +33,7 @@ export default function Navbar() {
         </Link>
 
         {/* ✅ Desktop Nav (centered links) */}
-        <div className="hidden md:flex items-center justify-center flex-1">
+        <div className="hidden lg:flex items-center justify-center flex-1">
           <div className="flex items-center gap-10 whitespace-nowrap">
             {navLinks.map((link, idx) => (
               <Link
@@ -48,7 +48,7 @@ export default function Navbar() {
         </div>
 
         {/* ✅ Desktop Buttons (right side) */}
-        <div className="hidden md:flex items-center gap-4">
+        <div className="hidden lg:flex items-center gap-4">
           <button className="border border-[#001738] text-[#001738] bg-white px-6 py-2 rounded-full font-medium hover:bg-[#001738] hover:text-white transition">
             Contact
           </button>
@@ -58,7 +58,7 @@ export default function Navbar() {
         </div>
 
         {/* ✅ Mobile Hamburger */}
-        <div className="md:hidden">
+        <div className="lg:hidden">
           <button onClick={() => setIsOpen(!isOpen)}>
             {isOpen ? <X size={28} /> : <Menu size={28} />}
           </button>
@@ -67,7 +67,7 @@ export default function Navbar() {
 
       {/* ✅ Mobile Menu (dropdown) */}
       {isOpen && (
-        <div className="md:hidden bg-white border-t border-gray-200 px-4 py-4 space-y-4 shadow-md">
+        <div className="lg:hidden bg-white border-t border-gray-200 px-7 md:px-18 py-4 space-y-4 shadow-md">
           {navLinks.map((link, idx) => (
             <Link
               key={idx}

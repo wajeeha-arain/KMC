@@ -1,5 +1,5 @@
 
-import Navbar from "@/Component/Layout/Navbar/Navbar"
+
 
 import PricingSection from "./PricingSection"
 import SectionPartnerCards from "./SectionPartnerCards"
@@ -11,14 +11,24 @@ import SecurityCTA from "./SecurityCTA"
 import CustomerSuccess from "./CustomerSuccess"
 import TransformBusiness from "./TransformBusiness"
 import PartnerSolutions from "./PartnerSolutions"
+import Layout from "@/Component/Layout"
+import CertifiedExcellence from "./CertifiedExcellence"
+import FAQSection from "./FAQSection"
+import KmcDifference from "./KmcDifference"
+import Talentsection from "./Talentsection"
+import WhyKMC from "./WhyKMC"
+import HeroSection from "./HeroSection"
 
 
 const FinalHome = ({ }) => {
   return (
-    <>
-  <Navbar />
+  
+<Layout >
+    <HeroSection />
      <PartnerSolutions />
      <PricingSection />
+      <WhyKMC />
+      <KmcDifference />
      <SectionPartnerCards />
      <PremiumWorkspaces />
      <LocationsSection />
@@ -26,9 +36,13 @@ const FinalHome = ({ }) => {
      <SecuritySection />
      <SecurityCTA />
      <CustomerSuccess />
+       <Talentsection />
+     <CertifiedExcellence />
+         <FAQSection />
      <TransformBusiness />
  
-        </>
+ </Layout>
+      
   )
 }
 

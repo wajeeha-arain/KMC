@@ -2,7 +2,7 @@
 
 import Image from "next/image";
 import Button from "@/Component/Button/Button";
-import { images } from "@/Component/Date/Services";
+import { image } from "@/Component/Date/Services";
 
 
 export default function Officeroom() {
@@ -22,9 +22,9 @@ export default function Officeroom() {
         </p>
       </div>
 
-      {/* Images Grid */}
+      {/* image Grid */}
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5 sm:gap-6 mb-10">
-        {images.map((src, index) => (
+        {image.map((src, index) => (
           <div
             key={index}
             className="relative w-full aspect-[4/5] sm:aspect-[3/4] lg:aspect-[4/5] rounded-[30px] overflow-hidden shadow-md"

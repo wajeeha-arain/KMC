@@ -30,7 +30,7 @@ export default function LocationsSection() {
           ))}
         </div>
 
-        {/* Images */}
+        {/* image */}
         <div className="flex gap-3 mt-10">
           {locations.map((location, index) => (
             <div

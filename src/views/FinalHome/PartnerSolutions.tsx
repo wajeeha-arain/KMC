@@ -29,7 +29,7 @@ export default function PartnerSolutions() {
           {` Here’s what you get with us:`}
         </h3>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8 justify-items-center">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 max-w-[1172px] w-full lg:gap-8 justify-items-center">
           {partnerSolutionsData.map((card) => (
             <div
               key={card.id}

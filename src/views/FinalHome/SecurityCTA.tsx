@@ -5,7 +5,7 @@ import React from "react";
 export default function SecurityCTA() {
   return (
     <section className="maincontainer w-full flex justify-center relative z-10 -mt-10">
-      <div className="max-w-[1170px] w-full bg-[#001738] rounded-[30px] hover:border-[7px] hover:border-white px-6 lg:px-10 py-10 flex flex-col lg:flex-row items-center justify-between gap-6 hover:shadow-[0px_4px_30px_rgba(0,0,0,0.2)]">
+      <div className=" w-full bg-[#001738] rounded-[30px] hover:border-[7px] hover:border-white px-6 lg:px-10 py-10 flex flex-col lg:flex-row items-center justify-between gap-6 hover:shadow-[0px_4px_30px_rgba(0,0,0,0.2)]">
         
       
         <h2 className="text-white font-semibold text-[22px] sm:text-[28px] lg:text-[32px] leading-tight max-w-[492px] text-center lg:text-left">

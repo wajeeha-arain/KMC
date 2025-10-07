@@ -7,14 +7,14 @@ import Button from "@/Component/Button/Button";
 export default function Hero() {
   return (
     <section className="relative bg-white">
-      <div className="maincontainer grid lg:grid-cols-12 gap-10 items-center mt-4 lg:mt-0">
+      <div className="maincontainer grid lg:grid-cols-12 gap-10 items-center mt-4 lg:mt-10">
         {/* Left */}
         <div className="lg:col-span-6 space-y-4 text-center lg:text-left">
           {/* Heading */}
           <h1 className="text-[28px] sm:text-[36px] md:text-[44px] lg:text-[52px] font-semibold leading-[120%] text-[#051636] capitalize">
             {`Build`}{" "}
-            <span className="text-[#EE7A30]">{`Your Offshore Team.`}</span>{" "}
-            {`The Easy Way.`}
+            <span className="text-[#EE7A30]">{`Your `}</span>{" "}
+            {`Offshore `} <span className="text-[#EE7A30]">{`Team.`}</span>{`The Easy Way.`}
           </h1>
 
           {/* Paragraphs */}
