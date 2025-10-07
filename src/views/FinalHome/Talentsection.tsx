@@ -22,7 +22,7 @@ export default function Talentsection() {
             {cards.map((card, index) => (
               <div
                 key={index}
-                className={`${card.bgColor} rounded-[20px] p-6  flex flex-col  `}
+                className={`${card.bgColor} rounded-[20px] p-6  flex flex-col items-center sm:justify-none justify-evenly sm:items-start  `}
                 style={{ width: "232.99px", height: "289.85px" }}
               >
        
