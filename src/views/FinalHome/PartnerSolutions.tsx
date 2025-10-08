@@ -8,7 +8,7 @@ export default function PartnerSolutions() {
   return (
     <section className="bg-white py-12">
       <div className="maincontainer mx-auto">
-     
+
         <p className="text-[#FF7200] font-bold uppercase tracking-wide text-[16px] sm:text-[20px] lg:text-left text-center">
           {`  Everything Under One Roof. Literally.`}
         </p>
@@ -38,7 +38,7 @@ export default function PartnerSolutions() {
               bg-white text-[#001738] border border-[#FF720012] 
               hover:bg-[#001738] hover:text-white`}
             >
-             
+
               <Image
                 src={card.img}
                 alt={card.title}
@@ -78,7 +78,7 @@ export default function PartnerSolutions() {
             </div>
           ))}
 
-       
+
           <div className="rounded-2xl overflow-hidden shadow-md transition duration-300 hover:scale-[1.02]  w-full max-w-[370px] aspect-[4/5]">
             <Image
               src="/image/Container.png"

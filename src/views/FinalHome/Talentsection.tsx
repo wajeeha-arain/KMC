@@ -8,13 +8,13 @@ export default function Talentsection() {
         <div className=" sm:text-start text-center">
       
           <h4 className="text-[#FF7200]  text-[18px] md:text-[20px] font-bold uppercase tracking-widest">
-            Talent Strategy
+           {` Talent Strategy`}
           </h4>
           <h2 className="  text-[32px] sm:text-3xl md:text-4xl lg:text-[55px] font-bold mt-2 mb-4 text-[#001738]">
-            How We Attract (and Keep) the Top 1%
+          {`  How We Attract (and Keep) the Top 1%`}
           </h2>
           <p className="text-[#6B717A] text-[14px] sm:text-[16px] md:text-[18px] mb-10">
-            We’re not just fighting for talent—we’re winning.
+          {`  We’re not just fighting for talent—we’re winning.`}
           </p>
 
        

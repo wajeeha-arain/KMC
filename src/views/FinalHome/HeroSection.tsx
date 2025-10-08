@@ -8,7 +8,7 @@ export default function HeroSection() {
     <section className="relative bg-white overflow-hidden pt-6 lg:pb-16 pb-8">
       <div className="maincontainer mx-auto flex flex-col lg:flex-row items-center lg:text-left text-center px-6 lg:px-16">
         
-        {/* LEFT CONTENT */}
+        
         <div>
           <p className="text-[#FF7200] font-bold uppercase tracking-wide text-[16px] sm:text-[20px] mb-4">
             {`One partner. Endless solutions.`}
@@ -24,7 +24,6 @@ export default function HeroSection() {
             {`Offshore teams, built to feel in-house. We’re not a platform. We’re your full-stack EOR—hiring, HR, compliance, payroll, workspace, and even housing.`}
           </p>
 
-          {/* BUTTONS */}
           <div className="flex flex-wrap items-center gap-4 justify-center lg:justify-start">
             <button className="bg-[#FF7200] text-white font-semibold text-[14px] sm:text-[16px] rounded-full px-8 py-4 transition hover:bg-[#e36600]">
               {`Let’s Talk Talent`}
@@ -35,7 +34,7 @@ export default function HeroSection() {
           </div>
         </div>
 
-        {/* RIGHT IMAGE SECTION */}
+        
         <div className="relative w-full lg:w-[50%] flex justify-center mt-4 md:mt-40">
           <div className="relative w-full">
             <Image
@@ -63,7 +62,6 @@ export default function HeroSection() {
             </div>
           </div>
 
-          {/* FLOATING BOX - 6000+ managed staff */}
           <div className="absolute hidden md:flex -top-[80px] right-[5%] flex-col items-center text-center animate-[float_4s_ease-in-out_infinite] delay-200">
             <h3 className="flex flex-col items-center text-[#001738] font-semibold text-[26px] sm:text-[34px] leading-none">
               <p className="text-[14px] sm:text-[16px] text-[#6B717A] mb-1">managed staff</p>
@@ -80,7 +78,7 @@ export default function HeroSection() {
         </div>
       </div>
 
-      {/* Floating animation keyframes */}
+      
       <style jsx global>{`
         @keyframes float {
           0%, 100% {

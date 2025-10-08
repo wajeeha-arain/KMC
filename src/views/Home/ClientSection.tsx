@@ -8,9 +8,9 @@ export default function ClientSection() {
   return (
     <section className="w-full bg-gradient-to-b from-white to-[#f8fbff] py-16 font-beVietnam">
       <div className="maincontainer mx-auto px-6 lg:px-12">
-        {/* Heading  */}
+      
         <div className="flex flex-col lg:flex-row items-center lg:items-start justify-between mb-12">
-          {/* Left Text */}
+     
           <div className="max-w-2xl text-center lg:text-left">
             <h2 className="text-3xl sm:text-4xl md:text-[40px] lg:text-[45px] leading-[110%] font-semibold">
               <span className="text-[#051636]">What Our </span>
@@ -23,7 +23,7 @@ export default function ClientSection() {
             </p>
           </div>
 
-          {/* Right  */}
+      
           <div className="flex items-center space-x-4 mt-6 lg:mt-16 justify-center lg:justify-end w-full lg:w-auto">
             <button className="w-[50px] h-[50px] rounded-full bg-white border border-[#F5F5F5] flex items-center justify-center hover:bg-[#EE7A30] transition">
               <MdKeyboardArrowLeft className="text-[#051636] text-2xl" />
@@ -44,7 +44,7 @@ export default function ClientSection() {
             priority
           />
 
-          {/* Play Button */}
+         
           <button className="absolute inset-0 flex items-center justify-center">
             <span className="w-[40px] h-[40px] sm:w-[70px] sm:h-[70px] md:w-[80px] md:h-[80px] flex items-center justify-center rounded-full 
               bg-white/20 backdrop-blur-md 

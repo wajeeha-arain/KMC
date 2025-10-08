@@ -8,7 +8,7 @@ import { image } from "@/Component/Date/Services";
 export default function Officeroom() {
   return (
     <section className="maincontainer bg-white py-6 sm:py-10">
-      {/* Heading */}
+     
       <div className="text-center mb-10 sm:mb-12">
         <h2 className="text-3xl sm:text-4xl md:text-[40px] lg:text-[45px] font-semibold leading-snug">
           <span className="text-[#051636]">Where </span>
@@ -22,7 +22,7 @@ export default function Officeroom() {
         </p>
       </div>
 
-      {/* image Grid */}
+     
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5 sm:gap-6 mb-10">
         {image.map((src, index) => (
           <div
@@ -40,7 +40,6 @@ export default function Officeroom() {
         ))}
       </div>
 
-      {/* Button */}
       <div className="text-center">
         <Button>{`Take A Virtual Office Tour`}</Button>
       </div>

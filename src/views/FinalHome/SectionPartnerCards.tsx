@@ -19,7 +19,7 @@ export default function SectionPartnerCards() {
               Industries We Power Up
             </h2>
             <p className="text-[14px] sm:text-[16px] lg:text-[18px] text-[#001738] pb-2 lg:pb-10 lg:text-left text-center">
-              You bring the mission. We build the team.
+           {`   You bring the mission. We build the team.`}
             </p>
           </div>
 

@@ -37,13 +37,13 @@ export default function StartingFive() {
             </span>.
           </p>
 
-          {/* Button */}
+          
           <div className="sm:text-left text-center sm:mt-10 mt-6">
             <Button>{`Claim Your Starting Five Offer`}</Button>
           </div>
         </div>
 
-        {/* Right */}
+        
         <div className="lg:col-span-6 space-y-4">
           {startingFiveData.features.map((f, i) => (
             <div
@@ -51,15 +51,15 @@ export default function StartingFive() {
               className="flex items-center w-full max-w-[615px] min-h-[80px] sm:min-h-[94px] gap-3 border-[1.5px] border-[#EE7A30] bg-white rounded-[20px] p-4 sm:p-5"
             >
               {/* Icon */}
-<div className="flex-none w-9 h-9 sm:w-[45px]  sm:h-[45px] flex items-center justify-center ">
-  <Image
-    src={f.image}
-    alt={f.title}
-    width={34}   // ≈ 33.75
-    height={39}  // ≈ 39.37
-    className="object-contain opacity-100 "
-  />
-</div>
+              <div className="flex-none w-9 h-9 sm:w-[45px]  sm:h-[45px] flex items-center justify-center ">
+                <Image
+                  src={f.image}
+                  alt={f.title}
+                  width={34} 
+                  height={39} 
+                  className="object-contain opacity-100 "
+                />
+              </div>
 
 
               {/* Title */}
@@ -71,7 +71,6 @@ export default function StartingFive() {
         </div>
       </div>
 
-      {/* Bottom Image */}
       <div className="relative w-full h-[35vh] sm:h-[45vh] md:h-[55vh] lg:h-[567px] max-w-[1440px] mx-auto">
         <Image
           src={startingFiveData.image}

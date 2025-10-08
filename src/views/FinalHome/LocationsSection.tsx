@@ -13,31 +13,29 @@ export default function LocationsSection() {
       style={{ backgroundImage: "url('/image/Background Image(1).png')" }}
     >
       <div className="maincontainer mx-auto flex flex-col items-center h-full">
-      
+
         <div className="flex gap-3 bg-white rounded-2xl p-2 shadow-md -mt-8">
           {locations.map((location, index) => (
             <button
               key={index}
               onClick={() => setSelected(index)}
-              className={`font-semibold text-[16px] px-6 py-2 rounded-xl capitalize ${
-                selected === index
+              className={`font-semibold text-[16px] px-6 py-2 rounded-xl capitalize ${selected === index
                   ? "bg-[#001738] text-white"
                   : "text-[#001738] hover:bg-[#001738] hover:text-white"
-              }`}
+                }`}
             >
               {location.name}
             </button>
           ))}
         </div>
 
-        {/* image */}
+     
         <div className="flex gap-3 mt-10">
           {locations.map((location, index) => (
             <div
               key={index}
-              className={`w-[100px] h-[100px] rounded-2xl overflow-hidden transition-all duration-300 ${
-                selected === index ? "border-4 border-[#fff]" : ""
-              }`}
+              className={`w-[100px] h-[100px] rounded-2xl overflow-hidden transition-all duration-300 ${selected === index ? "border-4 border-[#fff]" : ""
+                }`}
             >
               <Image
                 src={location.image}

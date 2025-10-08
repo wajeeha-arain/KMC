@@ -5,7 +5,7 @@ import { MdPlayArrow } from "react-icons/md";
 import Button from "@/Component/Button/Button";
 import { services, services2 } from "@/Component/Date/Services";
 
-// color helper
+
 const getColorClass = (color: string) => {
   switch (color) {
     case "#051636":
@@ -23,7 +23,7 @@ export default function TeamWork() {
   return (
     <div className="maincontainer">
       <div className="sm:my-14 my-6 mx-auto">
-        {/* Heading */}
+    
         <div className="text-center max-w-5xl mx-auto sm:mb-12 mb-6">
           <h2 className="text-3xl sm:text-4xl md:text-[40px] lg:text-[45px] font-semibold font-beVietnam leading-snug">
             <span className="text-[#051636]">{`Everything You Need.`}</span>{" "}
@@ -36,21 +36,20 @@ export default function TeamWork() {
           </p>
         </div>
 
-        {/* ✅ Mobile & Tablet: 2 + 2 + 1 layout */}
+       
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 lg:hidden">
           {allServices.map((srv, i) => (
             <Card key={`m-${i}`} srv={srv} big={i >= 3} />
           ))}
         </div>
 
-        {/* ✅ Desktop: 3 + 2 layout */}
+        
         <div className="hidden lg:grid grid-cols-3 gap-8">
-          {/* First 3 cards */}
+         
           {allServices.slice(0, 3).map((srv, i) => (
             <Card key={`lg-${i}`} srv={srv} />
           ))}
 
-          {/* Last 2 cards → full row, 2 columns */}
           <div className="col-span-3 grid grid-cols-2 gap-8">
             {allServices.slice(3, 5).map((srv, j) => (
               <Card key={`lg-row2-${j}`} srv={srv} big />

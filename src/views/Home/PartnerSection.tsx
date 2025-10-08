@@ -7,7 +7,7 @@ import Image from "next/image";
 export default function PartnerSection() {
   return (
     <section className="maincontainer relative w-full">
-      {/* Section Content */}
+     
       <div
         className="relative z-10 max-w-[1263px] mx-auto flex flex-col items-center justify-center text-center 
         rounded-[20px] sm:rounded-[25px] lg:rounded-[30px] 
@@ -16,7 +16,7 @@ export default function PartnerSection() {
         py-8 sm:py-12 lg:py-14 
         overflow-hidden" 
       >
-        {/* Left */}
+      
         <div
           className="absolute left-0 lg:left-[-20px] top-[60px]  lg:top-[120px] 
           w-[100px] sm:w-[180px] md:w-[250px] lg:w-[380px] z-0 hidden lg:block"
@@ -31,7 +31,7 @@ export default function PartnerSection() {
           />
         </div>
 
-        {/* Right */}
+        
         <div
           className="absolute right-0 lg:right-[-20px] top-[10px] sm:top-[30px] lg:top-[0px] 
           w-[100px] sm:w-[180px] md:w-[220px] lg:w-[330px] z-0 hidden lg:block"
@@ -46,7 +46,6 @@ export default function PartnerSection() {
           />
         </div>
 
-        {/* Heading */}
         <h2
           className="text-[#051636] font-semibold 
            text-3xl sm:text-4xl md:text-[40px] lg:text-[45px] 
@@ -59,7 +58,7 @@ export default function PartnerSection() {
           </span>
         </h2>
 
-        {/* Paragraph */}
+       
         <p
           className="mt-4 sm:mt-6 max-w-[590px] text-[#757575] font-normal 
           text-sm sm:text-base md:text-lg 
@@ -70,7 +69,6 @@ export default function PartnerSection() {
           Aussie businesses just like yours.`}
         </p>
 
-        {/* Button */}
         <div className="mt-6 sm:mt-8 relative z-10">
           <Button>{`Book Your Discovery Call Today`}</Button>
         </div>
