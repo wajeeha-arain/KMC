@@ -53,7 +53,7 @@ export default function HeroSection() {
             <h3 className="flex flex-row gap-2 items-center text-[#001738] font-semibold text-[26px] sm:text-[34px] leading-none">
               <span className="text-[#FFCE35] text-[36px] sm:text-[40px]">16</span>
               <span className="flex flex-col leading-tight">
-                <p className="text-[12px] sm:text-[14px] text-[#6B717A]">in business</p>
+                <p className="text-[14px] sm:text-[16px] text-[#6B717A]">in business</p>
                 <p className="text-[#001738] font-semibold text-[22px] sm:text-[30px]">years</p>
               </span>
             </h3>
@@ -66,7 +66,7 @@ export default function HeroSection() {
           {/* FLOATING BOX - 6000+ managed staff */}
           <div className="absolute hidden md:flex -top-[80px] right-[5%] flex-col items-center text-center animate-[float_4s_ease-in-out_infinite] delay-200">
             <h3 className="flex flex-col items-center text-[#001738] font-semibold text-[26px] sm:text-[34px] leading-none">
-              <p className="text-[12px] sm:text-[14px] text-[#6B717A] mb-1">managed staff</p>
+              <p className="text-[14px] sm:text-[16px] text-[#6B717A] mb-1">managed staff</p>
               <span className="flex flex-row items-center justify-center">
                 <span className="text-[#FF7200] text-[36px] sm:text-[40px]">6,000</span>
                 <span className="text-[#001738]">+</span>

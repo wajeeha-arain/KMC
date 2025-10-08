@@ -7,7 +7,7 @@ import { FaFacebookF, FaInstagram, FaLinkedinIn, FaXTwitter } from "react-icons/
 export default function Footer() {
   return (
     <footer className="bg-[#eef6fb] text-[#051636] pt-18 pb-6 mt-20">
-      <div className="maincontainer">
+      <div className="maincontainer mx-auto">
         {/* Top Section */}
         <div className="flex flex-col lg:flex-row gap-10 lg:gap-[81px]">
           {/* Logo + Text */}
@@ -22,7 +22,7 @@ export default function Footer() {
                 priority
               />
             </div>
-            <p className="mt-4 sm:mt-6 text-[15px] sm:text-[16px] lg:text-[18px] leading-[26px] 
+            <p className="mt-4 sm:mt-10 text-[15px] sm:text-[16px] lg:text-[18px] leading-[26px] 
                text-[#051636] font-[400] lg:max-w-[720px]">
               Lorem ipsum dolor sit amet consectetur. Id leo amet cursus non ut.
               Pretium nisl mauris nunc etiam sit quam nibh duis sollicitudin. Pretium nisl mauris
@@ -46,10 +46,10 @@ export default function Footer() {
         </div>
 
         {/* Divider */}
-        <div className="border-t border-[#757575] my-6 sm:my-8 w-full"></div>
+        <div className="border-t border-[#757575] my-6 sm:my-10 w-full"></div>
 
         {/* Bottom */}
-        <div className="flex flex-col md:flex-row items-center justify-between text-[14px] sm:text-[16px] lg:text-[18px] leading-[22px] sm:leading-[24px] lg:leading-[26px]">
+        <div className="flex flex-col md:flex-row items-center justify-between text-[14px] sm:text-[16px] lg:text-[18px] leading-[22px] sm:leading-[24px] lg:leading-[26px] lg:pb-6 pb-3">
           <p className="text-[#051636] text-center md:text-left">
             © 2025 KMC. All rights reserved.
           </p>
