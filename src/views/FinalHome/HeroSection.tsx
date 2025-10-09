@@ -14,9 +14,10 @@ export default function HeroSection() {
             {`One partner. Endless solutions.`}
           </p>
 
-          <h1 className="max-w-[1160px] text-[#001738] font-semibold text-[32px] sm:text-[42px] lg:text-[68px] leading-[50px] lg:leading-[74px]  pb-4  md:pb-6">
-            {`You don’t need a`} <br />
-            {`Platform, You need`} <br />
+        <h1 className="lg:max-w-[500px] text-[#001738] lg:text-left text-center font-semibold text-[32px] sm:text-[42px] lg:text-[68px] leading-[50px] lg:leading-[74px]  pb-4  md:pb-6">
+
+            {`You don’t need a`} 
+            {` Platform, You need`} 
             {`a Real Partner.`}
           </h1>
 

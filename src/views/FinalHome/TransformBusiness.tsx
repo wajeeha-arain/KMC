@@ -2,7 +2,7 @@
 
 import React from "react";
 import Image from "next/image";
-import { leftimage, rightimage } from "@/Component/Date/Services"; 
+import { leftimage, rightimage } from "@/Component/Date/Services";
 
 export default function TransformBusiness() {
   const CircleImage = ({ src, alt }: { src: string; alt: string }) => (
@@ -20,10 +20,10 @@ export default function TransformBusiness() {
   return (
     <section className="lg:py-20  py-6 ">
       <div className="maincontainer mx-auto flex flex-col lg:flex-row items-center justify-between gap-12">
-        
-      
+
+
         <div>
-     
+
           <div className="hidden lg:flex flex-row gap-8">
             <div className="flex flex-col gap-6 mt-12 items-center">
               {leftimage.slice(0, 2).map((img, i) => (
@@ -48,7 +48,7 @@ export default function TransformBusiness() {
         {/* ✅ Center Content */}
         <div className="text-center max-w-2xl">
           <p className="text-[#FF7200] font-dmSans font-bold text-[20px] uppercase mb-4">
-           {` Ready to Transform Your Business?`}
+            {` Ready to Transform Your Business?`}
           </p>
 
           <h2 className="text-[#001738] font-dmSans font-semibold text-[32px] sm:text-[42px] lg:text-[55px] leading-snug mb-4">
@@ -56,7 +56,7 @@ export default function TransformBusiness() {
           </h2>
 
           <p className="text-[#6B717A] text-[15px] lg:text-[18px] mb-8 max-w-[554px] mx-auto">
-           {` No fluff. No runarounds. Just an unfair hiring advantage.`}
+            {` No fluff. No runarounds. Just an unfair hiring advantage.`}
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
