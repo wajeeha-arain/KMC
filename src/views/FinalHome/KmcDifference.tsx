@@ -79,7 +79,7 @@ const KmcDifference = () => {
                     </div>
 
 
-                    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10 max-w-[1172px] w-full text-center">
+                    <div className="grid grid-cols-2 lg:grid-cols-4 gap-10 max-w-[1172px] w-full text-center">
                         <div>
                             <p className=" text-[18px] sm:text-3xl md:text-4xl lg:text-[79px] text-[#001738]">30-45</p>
                             <p className="text-[14px] sm:text-[16px] md:text-[18px] lg:text-[24px] text-[#6B717A]">DAYS TO FIRST HIRE</p>

@@ -17,7 +17,7 @@ export default function ClientSection() {
               <span className="text-[#EE7A30] font-normal">Clients Say</span>
             </h2>
             <p className="text-[#757575] text-[15px] sm:text-[16px] lg:text-[18px] leading-[26px] mt-4">
-{`              Don’t take our word for it—see it for yourself. We’ve helped
+              {`              Don’t take our word for it—see it for yourself. We’ve helped
               hundreds of Aussie businesses scale with offshore teams that
               actually work.`}
             </p>
