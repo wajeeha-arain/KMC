@@ -17,7 +17,7 @@ const WhyKMC = () => {
       key={i}
       className={`group relative rounded-[20px] border border-[#D6DCE3] p-2 transition-all duration-300 
         ${card.dark ? "bg-white" : "bg-white"} hover:bg-[#001738] hover:text-white`}
-      style={{ width: "100%", maxWidth: "370px" }}
+      style={{ width: "100%", maxWidth: "370px" }}    
     >
       {/* IMAGE */}
       <div className="w-full h-[450px] relative overflow-hidden rounded-[16px]">
