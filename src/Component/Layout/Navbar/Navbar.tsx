@@ -4,27 +4,25 @@ import React, { useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import { Menu, X } from "lucide-react";
-import { usePathname } from "next/navigation"; // 👈 added this
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
-  const pathname = usePathname(); // 👈 current route
-  const logoLink = pathname === "/finalhome" ? "/" : "/finalhome"; // 👈 conditional navigation
 
+  // ✅ Updated nav links (added Finalhome under About)
   const navLinks = [
     { name: "Services", href: "#" },
     { name: "Industries", href: "#" },
     { name: "Why KMC", href: "#" },
     { name: "Offices", href: "#" },
-    { name: "About", href: "#" },
+    { name: "About", href: "/finalhome" }, // 👈 Finalhome page here
   ];
 
   return (
     <nav className="w-full bg-white top-0 left-0 z-50 font-['DM_Sans']">
       <div className="maincontainer mx-auto flex items-center justify-between py-6 px-6 lg:px-12">
 
-        {/* ✅ Conditional Logo Link */}
-        <Link href={logoLink} className="flex items-center">
+        {/* ✅ Logo always links to home */}
+        <Link href="/" className="flex items-center">
           <Image
             src="/image/Logo.png"
             alt="KMC Logo"
