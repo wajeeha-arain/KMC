@@ -7,46 +7,13 @@ import {
   MdKeyboardArrowLeft,
   MdKeyboardArrowRight,
 } from "react-icons/md";
+import { clients } from "@/Component/Date/Services"; // 👈 import data from separate file
 
 export default function ClientSection() {
-  // 👇 Combined array for full client info (heading, desc, and image)
-  const clients = [
-    {
-      heading: "What Our Clients Say",
-      description:
-        "Don’t take our word for it—see it for yourself. We’ve helped hundreds of Aussie businesses scale with offshore teams that actually work.",
-      name: "James W.",
-      position: "Head of Operations, Melbourne",
-      image: "/image/Rectangle 63(1).png",
-    },
-    {
-      heading: "Real Stories from Our Clients",
-      description:
-        "We value our partnerships. Our offshore teams empower businesses to achieve more in less time.",
-      name: "Sarah L.",
-      position: "HR Director, Sydney",
-      image: "/image/3rd.png",
-    },
-    {
-      heading: "See What Businesses Think",
-      description:
-        "Our clients trust us because we deliver results that help them grow with confidence.",
-      name: "Daniel R.",
-      position: "Project Manager, Brisbane",
-      image: "/image/4th.png",
-    },
-  ];
-
-  // 👇 Single index to control everything (heading + p + image)
   const [currentIndex, setCurrentIndex] = useState(0);
 
-  const handleNext = () => {
-    setCurrentIndex((prev) => (prev + 1) % clients.length);
-  };
-
-  const handlePrev = () => {
-    setCurrentIndex((prev) => (prev - 1 + clients.length) % clients.length);
-  };
+  const handleNext = () => setCurrentIndex((prev) => (prev + 1) % clients.length);
+  const handlePrev = () => setCurrentIndex((prev) => (prev - 1 + clients.length) % clients.length);
 
   const currentClient = clients[currentIndex];
 
@@ -56,7 +23,6 @@ export default function ClientSection() {
         {/* Header */}
         <div className="flex flex-col lg:flex-row items-center lg:items-start justify-between mb-12">
           <div className="max-w-2xl text-center lg:text-left transition-all duration-500">
-            {/* 👇 Dynamic Heading */}
             <h2 className="text-3xl sm:text-4xl md:text-[40px] lg:text-[45px] leading-[110%] font-semibold">
               <span className="text-[#051636]">
                 {currentClient.heading.split(" ")[0]}{" "}
@@ -65,13 +31,12 @@ export default function ClientSection() {
                 {currentClient.heading.split(" ").slice(1).join(" ")}
               </span>
             </h2>
-
             <p className="text-[#757575] text-[15px] sm:text-[16px] lg:text-[18px] leading-[26px] mt-4 transition-all duration-500">
               {currentClient.description}
             </p>
           </div>
 
-          {/* Arrows (control all content) */}
+          {/* Arrows */}
           <div className="flex items-center space-x-4 mt-6 lg:mt-16 justify-center lg:justify-end w-full lg:w-auto">
             <button
               onClick={handlePrev}

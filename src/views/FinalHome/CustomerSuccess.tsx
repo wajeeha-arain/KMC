@@ -7,44 +7,20 @@ import {
   MdKeyboardArrowLeft,
   MdKeyboardArrowRight,
 } from "react-icons/md";
+import { customerSuccessData } from "@/Component/Date/Services";
 
 export default function CustomerSuccess() {
-  const clients = [
-    {
-      title: "What Our Clients Say",
-      quote: "“We scaled 100+ engineers in 90 days. No hiccups. No excuses.”",
-      name: "Viking Cloud",
-      position: "CTO",
-      avatar: "/image/Icon Container.png",
-      bg: "/image/Background Image(2).png",
-    },
-    {
-      title: "Real Stories from Our Clients",
-      quote: "“Their team became an extension of ours — seamless and reliable.”",
-      name: "BrightEdge",
-      position: "Operations Head",
-      avatar: "/image/Icon Container.png",
-      bg: "/image/5th.png",
-    },
-    {
-      title: "Trusted by Global Businesses",
-      quote: "“We achieved faster growth with their offshore team support.”",
-      name: "NextGen Solutions",
-      position: "Project Manager",
-      avatar: "/image/Icon Container.png",
-      bg: "/image/6th.png",
-    },
-  ];
-
   const [currentIndex, setCurrentIndex] = useState(0);
-  const current = clients[currentIndex];
+  const current = customerSuccessData[currentIndex];
 
   const handleNext = () => {
-    setCurrentIndex((prev) => (prev + 1) % clients.length);
+    setCurrentIndex((prev) => (prev + 1) % customerSuccessData.length);
   };
 
   const handlePrev = () => {
-    setCurrentIndex((prev) => (prev - 1 + clients.length) % clients.length);
+    setCurrentIndex(
+      (prev) => (prev - 1 + customerSuccessData.length) % customerSuccessData.length
+    );
   };
 
   return (
@@ -130,9 +106,6 @@ export default function CustomerSuccess() {
             <p className="text-[15px] sm:text-[22px] md:text-[28px] lg:text-[34px] sm:text-left text-center font-semibold leading-[120%] text-white drop-shadow-lg transition-all duration-500">
               {current.quote}
             </p>
-
-            {/* Dots */}
- 
           </div>
         </div>
       </div>

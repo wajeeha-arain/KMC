@@ -115,6 +115,73 @@ export const startingFiveData: StartingFiveData = {
     "/image/Rectangle 86.png",
     "/image/Rectangle 87(1).png",
   ];
+// src/Component/Data/CustomerSuccessData.ts
+
+export interface ClientData {
+  title: string;
+  quote: string;
+  name: string;
+  position: string;
+  avatar: string;
+  bg: string;
+}
+
+export const customerSuccessData: ClientData[] = [
+  {
+    title: "What Our Clients Say",
+    quote: "“We scaled 100+ engineers in 90 days. No hiccups. No excuses.”",
+    name: "Viking Cloud",
+    position: "CTO",
+    avatar: "/image/Icon Container.png",
+    bg: "/image/Background Image(2).png",
+  },
+  {
+    title: "Real Stories from Our Clients",
+    quote: "“Their team became an extension of ours — seamless and reliable.”",
+    name: "BrightEdge",
+    position: "Operations Head",
+    avatar: "/image/Icon Container.png",
+    bg: "/image/bg (1).png",
+  },
+  {
+    title: "Trusted by Global Businesses",
+    quote: "“We achieved faster growth with their offshore team support.”",
+    name: "NextGen Solve",
+    position: "Project Manager",
+    avatar: "/image/Icon Container.png",
+    bg: "/image/bg (2).png",
+  },
+];
+
+
+// ClientData.ts
+
+export const clients = [
+  {
+    heading: "What Our Clients Say",
+    description:
+      "Don’t take our word for it—see it for yourself. We’ve helped hundreds of Aussie businesses scale with offshore teams that actually work.",
+    name: "James W.",
+    position: "Head of Operations, Melbourne",
+    image: "/image/Rectangle 63(1).png",
+  },
+  {
+    heading: "Real Stories from Our Clients",
+    description:
+      "We value our partnerships. Our offshore teams empower businesses to achieve more in less time.",
+    name: "Sarah L.",
+    position: "HR Director, Sydney",
+    image: "/image/list2.jpeg",
+  },
+  {
+    heading: "See What Businesses Think",
+    description:
+      "Our clients trust us because we deliver results that help them grow with confidence.",
+    name: "Daniel R.",
+    position: "Project Manager, Brisbane",
+    image: "/image/list.jpeg",
+  },
+];
 
 
 //partnerSolutionsData.ts
