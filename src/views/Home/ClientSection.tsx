@@ -1,21 +1,46 @@
 "use client";
 
 import Image from "next/image";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import {
   MdPlayArrow,
   MdKeyboardArrowLeft,
   MdKeyboardArrowRight,
 } from "react-icons/md";
-import { clients } from "@/Component/Date/Services"; // 👈 import data from separate file
+import { clientsData } from "@/Component/Date/Services"; 
 
 export default function ClientSection() {
   const [currentIndex, setCurrentIndex] = useState(0);
+  const [touchStartX, setTouchStartX] = useState<number | null>(null);
+  const [touchEndX, setTouchEndX] = useState<number | null>(null);
 
-  const handleNext = () => setCurrentIndex((prev) => (prev + 1) % clients.length);
-  const handlePrev = () => setCurrentIndex((prev) => (prev - 1 + clients.length) % clients.length);
+  const handleNext = () =>
+    setCurrentIndex((prev) => (prev + 1) % clientsData.length);
+  const handlePrev = () =>
+    setCurrentIndex((prev) => (prev - 1 + clientsData.length) % clientsData.length);
 
-  const currentClient = clients[currentIndex];
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentIndex((prev) => (prev + 1) % clientsData.length);
+    }, 3000);
+    return () => clearInterval(interval);
+  }, []);
+
+  // Swipe gesture
+  const handleTouchStart = (e: React.TouchEvent) =>
+    setTouchStartX(e.targetTouches[0].clientX);
+  const handleTouchMove = (e: React.TouchEvent) =>
+    setTouchEndX(e.targetTouches[0].clientX);
+  const handleTouchEnd = () => {
+    if (!touchStartX || !touchEndX) return;
+    const diff = touchStartX - touchEndX;
+    if (diff > 50) handleNext();
+    if (diff < -50) handlePrev();
+    setTouchStartX(null);
+    setTouchEndX(null);
+  };
+
+  const currentClient = clientsData[currentIndex];
 
   return (
     <section className="w-full bg-gradient-to-b from-white to-[#f8fbff] py-16 font-beVietnam">
@@ -53,16 +78,32 @@ export default function ClientSection() {
           </div>
         </div>
 
-        {/* Image Section */}
-        <div className="relative mx-auto max-w-[1260px] h-[350px] sm:h-[500px] md:h-[600px] lg:h-[650px] rounded-[30px] overflow-hidden transition-all duration-500">
-          <Image
-            key={currentClient.image}
-            src={currentClient.image}
-            alt={currentClient.name}
-            fill
-            className="object-cover transition-all duration-700"
-            priority
-          />
+        {/* Smooth Slider Section */}
+        <div
+          onTouchStart={handleTouchStart}
+          onTouchMove={handleTouchMove}
+          onTouchEnd={handleTouchEnd}
+          className="relative mx-auto max-w-[1260px] h-[350px] sm:h-[500px] md:h-[600px] lg:h-[650px] rounded-[30px] overflow-hidden"
+        >
+          <div
+            className="flex transition-transform duration-700 ease-in-out"
+            style={{ transform: `translateX(-${currentIndex * 100}%)` }}
+          >
+            {clientsData.map((client, i) => (
+              <div
+                key={i}
+                className="w-full flex-shrink-0 relative h-[350px] sm:h-[500px] md:h-[600px] lg:h-[650px]"
+              >
+                <Image
+                  src={client.image}
+                  alt={client.name}
+                  fill
+                  className="object-cover"
+                  priority={i === currentIndex}
+                />
+              </div>
+            ))}
+          </div>
 
           {/* Play Button */}
           <button className="absolute inset-0 flex items-center justify-center">
@@ -76,7 +117,7 @@ export default function ClientSection() {
             </span>
           </button>
 
-          {/* Text Overlay */}
+       
           <div className="absolute bottom-6 left-6 right-6 flex flex-col sm:flex-row items-center sm:items-end justify-center sm:justify-between text-white transition-all duration-500">
             <div className="text-center sm:text-left">
               <h3 className="text-[22px] sm:text-[26px] md:text-[32px] font-semibold leading-[100%]">
@@ -90,7 +131,7 @@ export default function ClientSection() {
 
             {/* Dots */}
             <div className="flex space-x-2 mt-6 sm:mt-0">
-              {clients.map((_, i) => (
+              {clientsData.map((_, i) => (
                 <button
                   key={i}
                   onClick={() => setCurrentIndex(i)}

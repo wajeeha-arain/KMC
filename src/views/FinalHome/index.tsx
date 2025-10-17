@@ -18,6 +18,7 @@ import KmcDifference from "./KmcDifference"
 import Talentsection from "./Talentsection"
 import WhyKMC from "./WhyKMC"
 import HeroSection from "./HeroSection"
+import Logo from "./Logo"
 
 
 const FinalHome = ({ }) => {
@@ -25,6 +26,7 @@ const FinalHome = ({ }) => {
   
 <Layout >
     <HeroSection />
+    <Logo />
      <PartnerSolutions />
      <PricingSection />
       <WhyKMC />

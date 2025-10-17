@@ -8,6 +8,7 @@ import Hero from "./Hero";
 import Businesses from "./Businesses";
 import Card from "./Card"
 import SectionsCard from "./SectionsCard"
+import Logos from "./Logos";
 
 
 
@@ -21,6 +22,7 @@ const Home = ({ }) => {
   return (
     <Layout>
       <Hero />
+      <Logos />
       <Businesses />
        <Card />
       <TeamWork />

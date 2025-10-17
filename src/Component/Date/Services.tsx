@@ -153,10 +153,17 @@ export const customerSuccessData: ClientData[] = [
   },
 ];
 
+// src/Component/Data/clientsData.ts
 
-// ClientData.ts
+export interface ClientType {
+  heading: string;
+  description: string;
+  name: string;
+  position: string;
+  image: string;
+}
 
-export const clients = [
+export const clientsData: ClientType[] = [
   {
     heading: "What Our Clients Say",
     description:
